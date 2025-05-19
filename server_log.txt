@@ -1,3 +1,23 @@
 [INFO] (2025-05-20 00:23) Server is listeting on ('0.0.0.0', 9339))
 [INFO] (2025-05-20 00:23) Client connected: ('192.168.0.101', 59595)
 [INFO] (2025-05-20 00:30) Server is listeting on ('0.0.0.0', 9339))
+[INFO] (2025-05-20 00:38) Server is listeting on ('0.0.0.0', 9339))
+[INFO] (2025-05-20 00:38) New connection from {addr}
+[INFO] (2025-05-20 00:38) Server is listeting on ('0.0.0.0', 9339))
+[INFO] (2025-05-20 00:38) New connection from ('192.168.0.101', 60088)
+[INFO] (2025-05-20 00:46) Server is listeting on ('0.0.0.0', 9339))
+[INFO] (2025-05-20 00:47) New connection from ('192.168.0.106', 48736)
+[INFO] (2025-05-20 00:47) New message with type 10101
+[WARNING] (2025-05-20 00:47) User has disconnected
+[INFO] (2025-05-20 00:53) Server is listeting on ('0.0.0.0', 9339))
+[INFO] (2025-05-20 00:54) New connection from ('192.168.0.106', 41868)
+[INFO] (2025-05-20 00:54) [Messaging.on_receive] New message with type=10101, length=201, message_version=3
+[WARNING] (2025-05-20 00:54) User has disconnected
+[INFO] (2025-05-20 00:54) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+[INFO] (2025-05-20 00:54) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 43294)
+[INFO] (2025-05-20 00:54) [Messaging.on_receive] New message with type=10101, length=201, message_version=3
+[WARNING] (2025-05-20 00:54) User has disconnected
+[INFO] (2025-05-20 00:56) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+[INFO] (2025-05-20 00:56) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 46436)
+[INFO] (2025-05-20 00:56) [Messaging.on_receive] New message with type=10101, length=201, message_version=3
+[WARNING] (2025-05-20 00:56) [ClientConnectionManager.run_session_async] User has disconnected
