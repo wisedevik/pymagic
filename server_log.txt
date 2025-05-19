@@ -21,3 +21,10 @@
 [INFO] (2025-05-20 00:56) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 46436)
 [INFO] (2025-05-20 00:56) [Messaging.on_receive] New message with type=10101, length=201, message_version=3
 [WARNING] (2025-05-20 00:56) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-20 01:00) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+[INFO] (2025-05-20 01:00) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+[INFO] (2025-05-20 01:01) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+[INFO] (2025-05-20 01:02) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+[INFO] (2025-05-20 01:02) Server stopped
+[INFO] (2025-05-20 01:02) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+[INFO] (2025-05-20 01:02) [TCPGateway.stop] Server stopped

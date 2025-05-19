@@ -36,3 +36,15 @@ class TCPGateway:
                 break
             except Exception as e:
                 Debugger.error(f"Unexpected error: {e}")
+
+    async def stop(self):
+        self._running = False
+        if self._listen_task:
+            self._listen_task.cancel()
+            try:
+                await self._listen_task
+            except asyncio.CancelledError:
+                pass
+            self._listen_task = None
+        self._socket.close()
+        Debugger.print("[TCPGateway.stop] Server stopped")

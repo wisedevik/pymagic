@@ -10,7 +10,13 @@ async def main():
     gateway = TCPGateway()
     await gateway.start()
 
-    await asyncio.Future()
+    try:
+        await asyncio.Future()
+    finally:
+        await gateway.stop()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        pass
