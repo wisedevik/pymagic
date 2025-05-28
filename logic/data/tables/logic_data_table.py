@@ -31,10 +31,10 @@ class LogicDataTable:
         return self._items[index]
 
     def set_table(self, table: CSVTable) -> None:
-            self._table = table
-            for i, item in enumerate(self._items):
-                assert item is not None
-                item.set_row(table.get_row_at(i))
+        self._table = table
+        for i, item in enumerate(self._items):
+            assert item is not None
+            item.set_row(table.get_row_at(i))
 
     def set_name(self, name: str) -> None:
         self._table_name = name
@@ -57,7 +57,9 @@ class LogicDataTable:
                     return data
 
             if caller:
-                Debugger.warning(f"CSV row ({caller.get_name()}) has an invalid reference ({name})")
+                Debugger.warning(
+                    f"CSV row ({caller.get_name()}) has an invalid reference ({name})"
+                )
 
         return None
 
@@ -69,13 +71,22 @@ class LogicDataTable:
 
         match self._table_idx:
             case LogicDataType.BUILDING:
-                from logic.data.data_objects.logic_building_data import LogicBuildingData
+                from logic.data.data_objects.logic_building_data import (
+                    LogicBuildingData,
+                )
+
                 item = LogicBuildingData(row, self)
             case LogicDataType.BUILDING_CLASS:
-                from logic.data.data_objects.logic_building_class_data import LogicBuildingClassData
+                from logic.data.data_objects.logic_building_class_data import (
+                    LogicBuildingClassData,
+                )
+
                 item = LogicBuildingClassData(row, self)
             case LogicDataType.RESOURCE:
-                from logic.data.data_objects.logic_resource_data import LogicResourceData
+                from logic.data.data_objects.logic_resource_data import (
+                    LogicResourceData,
+                )
+
                 item = LogicResourceData(row, self)
             case _:
                 Debugger.error(f"Invalid data table id: {self._table_idx}")

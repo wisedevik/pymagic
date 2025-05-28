@@ -1,5 +1,6 @@
 from titan.math.logic_long import LogicLong
 
+
 class ChecksumEncoder:
     def __init__(self) -> None:
         self.checksum: int = 0
@@ -8,8 +9,8 @@ class ChecksumEncoder:
         self.enabled: bool = True
 
     def enable_check_sum(self, enable: bool):
-        if (not self.enabled or enable):
-            if (not self.enabled and enable):
+        if not self.enabled or enable:
+            if not self.enabled and enable:
                 self.checksum = self.snapshot_checksum
 
             self.enabled = enable
@@ -36,10 +37,14 @@ class ChecksumEncoder:
         value.encode(self)
 
     def write_bytes(self, value: bytearray, length: int):
-        self.checksum = ((length + 28 if value is not None else 27) + (self.checksum >> 31)) | (self.checksum << (32 - 31))
+        self.checksum = (
+            (length + 28 if value is not None else 27) + (self.checksum >> 31)
+        ) | (self.checksum << (32 - 31))
 
     def write_string(self, value: str):
-        self.checksum = (len(value) + 28 if value is not None else 27) + self.rotate_right(self.checksum, 31)
+        self.checksum = (
+            len(value) + 28 if value is not None else 27
+        ) + self.rotate_right(self.checksum, 31)
 
     def write_string_reference(self, value: str):
         self.checksum = len(value) + self.rotate_right(self.checksum, 31) + 38

@@ -1,5 +1,6 @@
 import math
 
+
 class LogicGamePlayUtil:
     @staticmethod
     def dps_to_single_hit(dps: int, ms: int):

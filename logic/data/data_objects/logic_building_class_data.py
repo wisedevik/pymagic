@@ -21,9 +21,13 @@ class LogicBuildingClassData(LogicData):
         self._worker = "Worker" == self.get_name()
         self._town_hall = "Town Hall" == self.get_name()
         self._wall = "Wall" == self.get_name()
-        self._shop_category_resource = self._row.get_boolean_value("ShopCategoryResource", 0)
+        self._shop_category_resource = self._row.get_boolean_value(
+            "ShopCategoryResource", 0
+        )
         self._shop_category_army = self._row.get_boolean_value("ShopCategoryArmy", 0)
-        self._shop_category_defense = self._row.get_boolean_value("ShopCategoryDefense", 0)
+        self._shop_category_defense = self._row.get_boolean_value(
+            "ShopCategoryDefense", 0
+        )
 
     def can_buy(self) -> bool:
         return self._canBuy

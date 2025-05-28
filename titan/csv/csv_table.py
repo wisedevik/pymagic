@@ -22,9 +22,9 @@ class CSVTable:
     def str_to_bool(value: str) -> tuple[bool, bool]:
         if isinstance(value, str):
             val_lower = value.strip().lower()
-            if val_lower in ['true']:
+            if val_lower in ["true"]:
                 return True, True
-            elif val_lower in ['false']:
+            elif val_lower in ["false"]:
                 return True, False
         return False, False
 
@@ -42,7 +42,9 @@ class CSVTable:
                     if success:
                         column.add_boolean_value(bool(value))
                     else:
-                        Debugger.warning(f"CSVTable.add_and_convert_value invalid value '{value}' in Boolean column '{self._columnNameList[index]}', {self.get_file_name()}")
+                        Debugger.warning(
+                            f"CSVTable.add_and_convert_value invalid value '{value}' in Boolean column '{self._columnNameList[index]}', {self.get_file_name()}"
+                        )
 
                         column.add_boolean_value(False)
         else:
@@ -52,7 +54,7 @@ class CSVTable:
         return self._node.get_name()
 
     def get_column_name(self, idx: int) -> str:
-        return self._columnNameList[idx];
+        return self._columnNameList[idx]
 
     def add_column_type(self, type: int) -> None:
         self._columnList.add(CSVColumn(type, self._size))
@@ -61,7 +63,7 @@ class CSVTable:
         return self._columnList.count
 
     def get_value_at(self, column_index: int, index: int) -> str:
-        if (column_index >= 0):
+        if column_index >= 0:
             return self._columnList[column_index].get_string_value(index)
 
         return ""
@@ -73,7 +75,7 @@ class CSVTable:
         return self._columnNameList.index_of(name)
 
     def get_integer_value_at(self, column_index: int, index: int) -> int:
-        if (column_index >= 0):
+        if column_index >= 0:
             return self._columnList[column_index].get_int_value(index)
 
         return 0
@@ -82,7 +84,7 @@ class CSVTable:
         return self.get_integer_value_at(self._columnNameList.index_of(name), index)
 
     def get_boolean_value_at(self, column_index: int, index: int) -> bool:
-        if (column_index >= 0):
+        if column_index >= 0:
             return self._columnList[column_index].get_boolean_value(index)
 
         return False
@@ -106,13 +108,19 @@ class CSVTable:
         return self._rowList.count
 
     def get_array_size_at(self, row: CSVRow, index: int):
-        if (self._rowList.count > 0):
+        if self._rowList.count > 0:
             rowIndex = self._rowList.index_of(row)
 
-            if (rowIndex != -1):
+            if rowIndex != -1:
                 column = self._columnList[index]
-                return column.get_array_size(self._rowList[rowIndex].get_row_offset(),
-                    column.get_size() if rowIndex + 1 >= self._rowList.count else self._rowList[rowIndex + 1].get_row_offset())
+                return column.get_array_size(
+                    self._rowList[rowIndex].get_row_offset(),
+                    (
+                        column.get_size()
+                        if rowIndex + 1 >= self._rowList.count
+                        else self._rowList[rowIndex + 1].get_row_offset()
+                    ),
+                )
         return 0
 
     def create_row(self) -> None:
@@ -122,5 +130,7 @@ class CSVTable:
         self._columnList.ensure_capacity(self._columnNameList.count)
 
     def validate_column_types(self) -> None:
-        if (self._columnNameList.count != self._columnList.count):
-            Debugger.warning(f"Column name count {self._columnNameList.count}, column type count {self._columnList.count}, file {self.get_file_name()}")
+        if self._columnNameList.count != self._columnList.count:
+            Debugger.warning(
+                f"Column name count {self._columnNameList.count}, column type count {self._columnList.count}, file {self.get_file_name()}"
+            )

@@ -1,13 +1,13 @@
 from typing import TypeVar, Generic, Iterator, Optional
 
-T = TypeVar('T')
+T = TypeVar("T")
+
 
 class LogicArrayList(Generic[T]):
     def __init__(self, initial_capacity: int = 0):
         self._items: list[Optional[T]] = [None] * initial_capacity
         self._count: int = 0
         self._item_type: Optional[type] = None
-
 
     def __getitem__(self, index: int) -> T:
         item = self._items[index]
@@ -40,7 +40,7 @@ class LogicArrayList(Generic[T]):
         if self._count == len(self._items):
             self.ensure_capacity(len(self._items) * 2 if len(self._items) != 0 else 5)
         if self._count > index:
-            self._items[index+1:self._count+1] = self._items[index:self._count]
+            self._items[index + 1 : self._count + 1] = self._items[index : self._count]
         self._items[index] = item
         self._count += 1
 
@@ -54,7 +54,9 @@ class LogicArrayList(Generic[T]):
         if index < self._count:
             self._count -= 1
             if index != self._count:
-                self._items[index:self._count] = self._items[index+1:self._count+1]
+                self._items[index : self._count] = self._items[
+                    index + 1 : self._count + 1
+                ]
             self._items[self._count] = None
 
     def ensure_capacity(self, count: int) -> None:
@@ -66,4 +68,4 @@ class LogicArrayList(Generic[T]):
             yield self._items[i]  # type: ignore
 
     def __repr__(self) -> str:
-        return repr(self._items[:self._count])
+        return repr(self._items[: self._count])

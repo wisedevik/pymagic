@@ -18,13 +18,18 @@ class LogicBuildingData(LogicData):
     def create_references(self):
         super().create_references()
         from logic.data.tables.logic_data_tables import LogicDataTables
-        self._building_class = LogicDataTables.get_building_class_by_name(self._row.get_value("BuildingClass", 0), self)
+
+        self._building_class = LogicDataTables.get_building_class_by_name(
+            self._row.get_value("BuildingClass", 0), self
+        )
         if self._building_class is None:
             Debugger.error(f"Building class is not defined for {self._row.get_name()}")
 
         self._width = self._row.get_integer_value("Width", 0)
         self._height = self._row.get_integer_value("Height", 0)
-        self._produces_units_of_type = self._row.get_integer_value("ProducesUnitsOfType", 0)
+        self._produces_units_of_type = self._row.get_integer_value(
+            "ProducesUnitsOfType", 0
+        )
 
         upgLvlCnt = self._upgrade_level_count = self._row.get_longest_array_size()
         self._damage = [0] * upgLvlCnt
@@ -32,7 +37,9 @@ class LogicBuildingData(LogicData):
 
         for i in range(upgLvlCnt):
             self._damage[i] = self._row.get_clamped_integer_value("Damage", i)
-            self._housingSpace[i] = self._row.get_clamped_integer_value("HousingSpace", i)
+            self._housingSpace[i] = self._row.get_clamped_integer_value(
+                "HousingSpace", i
+            )
 
     def get_building_class(self) -> LogicBuildingClassData:
         assert self._building_class is not None

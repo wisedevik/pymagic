@@ -4,6 +4,8 @@ import asyncio
 from server.network.protocol.message_manager import MessageManager
 from server.network.protocol.messaging import Messaging
 from titan.debug.debugger import Debugger
+from titan.message.piranha_message import PiranhaMessage
+
 
 class ClientConnection:
     def __init__(self, socket: socket.socket) -> None:
@@ -21,7 +23,10 @@ class ClientConnection:
             if not data:
                 break
 
-            self._receive_buffer[recv_idx:recv_idx+len(data)] = data
+            self._receive_buffer[recv_idx : recv_idx + len(data)] = data
             recv_idx += len(data)
 
-            self._messaging.on_receive(self._receive_buffer, recv_idx)
+            await self._messaging.on_receive(self._receive_buffer, recv_idx)
+
+    async def send_message(self, message: PiranhaMessage):
+        await self._messaging.send(message)

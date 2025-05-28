@@ -1,5 +1,5 @@
-from logic.data.core.global_id import GlobalID
-from logic.data.core.logic_data_type import LogicDataType
+from logic.data.global_id import GlobalID
+from logic.data.logic_data_type import LogicDataType
 from titan.csv.csv_row import CSVRow
 
 
@@ -15,7 +15,7 @@ class LogicData:
             int(table.get_table_index()) + 1, table.get_item_count()
         )
 
-    def create_references(self) -> None:
+    def create_references(self):
         self._iconSWF = self._row.get_value("IconSWF", 0)
         self._iconExportName = self._row.get_value("IconExportName", 0)
         self._tid = self._row.get_value("TID", 0)

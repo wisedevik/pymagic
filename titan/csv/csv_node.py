@@ -33,7 +33,9 @@ class CSVNode:
                     elif lowered == "boolean":
                         column_type = 2
                     else:
-                        Debugger.error(f"Invalid column type '{type_str}', column name {column_names[i]}, file {self._name}. Expecting: int/string/boolean.")
+                        Debugger.error(
+                            f"Invalid column type '{type_str}', column name {column_names[i]}, file {self._name}. Expecting: int/string/boolean."
+                        )
 
                 self._table.add_column_type(column_type)
 
@@ -51,7 +53,7 @@ class CSVNode:
     def parse_line(self, line: str) -> LogicArrayList[str]:
         line = line.rstrip("\n")
         in_quote = False
-        read_field = ''
+        read_field = ""
         fields = LogicArrayList[str]()
 
         i = 0
@@ -66,9 +68,9 @@ class CSVNode:
                         in_quote = False
                 else:
                     in_quote = True
-            elif char == ',' and not in_quote:
+            elif char == "," and not in_quote:
                 fields.add(read_field)
-                read_field = ''
+                read_field = ""
             else:
                 read_field += char
             i += 1

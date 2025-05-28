@@ -1,5 +1,6 @@
 from enum import IntEnum
 
+
 class LogicDataType(IntEnum):
     BUILDING = 0
     LOCALE = 1

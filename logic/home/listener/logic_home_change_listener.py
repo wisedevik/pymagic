@@ -1,0 +1,2 @@
+class LogicHomeChangeListener:
+    pass

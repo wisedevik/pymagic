@@ -6,11 +6,9 @@ class PiranhaMessage:
         self.stream = ByteStream(10)
         self.version = 0
 
-    def decode(self):
-        ...
+    def decode(self): ...
 
-    def encode(self):
-        ...
+    def encode(self): ...
 
     def get_message_type(self) -> int:
         return 0

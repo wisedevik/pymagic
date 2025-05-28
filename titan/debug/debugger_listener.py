@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class DebuggerListener(ABC):
     @abstractmethod
     def hud_print(self, message: str) -> None:

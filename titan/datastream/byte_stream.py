@@ -13,7 +13,7 @@ class ByteStream(ChecksumEncoder):
         self.offset: int = 0
 
     def get_length(self) -> int:
-        if (self.offset < self.length):
+        if self.offset < self.length:
             return self.length
 
         return self.offset
@@ -32,7 +32,7 @@ class ByteStream(ChecksumEncoder):
         return self.buffer
 
     def read_roolean(self) -> bool:
-        if (self.bit_index == 0):
+        if self.bit_index == 0:
             self.offset += 1
 
         value: bool = (self.buffer[self.offset - 1] & (1 << self.bit_index)) != 0
@@ -57,12 +57,17 @@ class ByteStream(ChecksumEncoder):
     def read_int(self):
         self.bit_index = 0
 
-        value = (self.buffer[self.offset] << 24) | (self.buffer[self.offset + 1] << 16) | (self.buffer[self.offset + 2] << 8) | self.buffer[self.offset + 3]
+        value = (
+            (self.buffer[self.offset] << 24)
+            | (self.buffer[self.offset + 1] << 16)
+            | (self.buffer[self.offset + 2] << 8)
+            | self.buffer[self.offset + 3]
+        )
         self.offset += 4
 
         return value
 
-    def readLong(self) -> LogicLong:
+    def read_long(self) -> LogicLong:
         long: LogicLong = LogicLong()
         long.decode(self)
         return long
@@ -73,14 +78,14 @@ class ByteStream(ChecksumEncoder):
     def read_bytes(self, length: int, maxCapacity: int) -> Optional[bytearray]:
         self.bit_index = 0
 
-        if (length <= -1):
-            if (length != -1):
+        if length <= -1:
+            if length != -1:
                 Debugger.warning("Negative readBytes length encountered.")
 
             return None
 
-        if (length <= maxCapacity):
-            array: bytearray = self.buffer[self.offset: self.offset + length]
+        if length <= maxCapacity:
+            array: bytearray = self.buffer[self.offset : self.offset + length]
             self.offset += length
             return array
 
@@ -90,14 +95,14 @@ class ByteStream(ChecksumEncoder):
     def read_string(self, maxCapacity: int = 900001) -> Optional[str]:
         length: int = self.read_bytes_length()
 
-        if (length == -1):
-            if (length != -1):
+        if length == -1:
+            if length != -1:
                 Debugger.warning("Too long String encountered.")
 
             return None
         else:
-            if (length <= maxCapacity):
-                byteArray: bytearray = self.buffer[self.offset: self.offset + length]
+            if length <= maxCapacity:
+                byteArray: bytearray = self.buffer[self.offset : self.offset + length]
                 stringValue: str = byteArray.decode("utf-8")
                 self.offset += length
                 return stringValue
@@ -109,12 +114,12 @@ class ByteStream(ChecksumEncoder):
     def read_string_reference(self, maxCapacity: int = 900000) -> str:
         length: int = self.read_bytes_length()
 
-        if (length <= -1):
+        if length <= -1:
             Debugger.warning("Negative String length encountered.")
 
         else:
-            if (length <= maxCapacity):
-                byteArray: bytearray = self.buffer[self.offset: self.offset + length]
+            if length <= maxCapacity:
+                byteArray: bytearray = self.buffer[self.offset : self.offset + length]
                 stringValue: str = byteArray.decode("utf-8")
                 self.offset += length
                 return stringValue
@@ -122,7 +127,6 @@ class ByteStream(ChecksumEncoder):
             Debugger.warning("Too long String encountered, max " + str(maxCapacity))
 
         return ""
-
 
     def write_boolean(self, value: bool):
         super().write_boolean(value)
@@ -185,24 +189,24 @@ class ByteStream(ChecksumEncoder):
             self.ensure_capacity(length + 4)
             self.write_int(length)
 
-            self.buffer[self.offset:self.offset + length] = value
+            self.buffer[self.offset : self.offset + length] = value
             self.offset += length
 
     def write_string(self, value: str):
         super().write_string(value)
 
-        if (value is None):
+        if value is None:
             self.write_int(-1)
 
         else:
             bytesValue: bytes = value.encode("utf-8")
             length: int = len(bytesValue)
 
-            if (length <= 900001):
+            if length <= 900001:
                 self.ensure_capacity(length + 4)
                 self.write_int(length)
 
-                self.buffer[self.offset:self.offset + length] = bytesValue
+                self.buffer[self.offset : self.offset + length] = bytesValue
                 self.offset += length
             else:
                 print("ByteStream::writeString invalid string length " + str(length))
@@ -214,16 +218,15 @@ class ByteStream(ChecksumEncoder):
         bytesValue: bytes = value.encode("utf-8")
         length: int = len(bytesValue)
 
-        if (length <= 900001):
+        if length <= 900001:
             self.ensure_capacity(length + 4)
             self.write_int(length)
 
-            self.buffer[self.offset:self.offset + length] = bytesValue
+            self.buffer[self.offset : self.offset + length] = bytesValue
             self.offset += length
         else:
             print("ByteStream::writeString invalid string length " + str(length))
             self.write_int(-1)
-
 
     def reset_offset(self):
         self.offset = 0
@@ -244,5 +247,7 @@ class ByteStream(ChecksumEncoder):
 
         if self.offset + capacity > bufferLength:
             tmpBuffer = bytearray(bufferLength + capacity + 100)
-            tmpBuffer[:bufferLength] = self.buffer # copy from buffer to tmpBuffer by bufferLength
+            tmpBuffer[:bufferLength] = (
+                self.buffer
+            )  # copy from buffer to tmpBuffer by bufferLength
             self.buffer = tmpBuffer

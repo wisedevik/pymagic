@@ -10,20 +10,36 @@ class LogicResources:
     @staticmethod
     def create_data_table_resources_array() -> LogicArrayList[LogicDataTableResource]:
         arrayList = LogicArrayList[LogicDataTableResource](TABLE_COUNT)
-        arrayList.add(LogicDataTableResource("server/assets/csv_logic/buildings.csv", LogicDataType.BUILDING, 0))
-        arrayList.add(LogicDataTableResource("server/assets/csv_logic/resources.csv", LogicDataType.RESOURCE, 0))
-        arrayList.add(LogicDataTableResource("server/assets/csv_logic/building_classes.csv", LogicDataType.BUILDING_CLASS, 0))
+        arrayList.add(
+            LogicDataTableResource(
+                "server/assets/csv_logic/buildings.csv", LogicDataType.BUILDING, 0
+            )
+        )
+        arrayList.add(
+            LogicDataTableResource(
+                "server/assets/csv_logic/resources.csv", LogicDataType.RESOURCE, 0
+            )
+        )
+        arrayList.add(
+            LogicDataTableResource(
+                "server/assets/csv_logic/building_classes.csv",
+                LogicDataType.BUILDING_CLASS,
+                0,
+            )
+        )
         return arrayList
 
     @staticmethod
-    def load(resources: LogicArrayList[LogicDataTableResource], idx: int, node: CSVNode):
+    def load(
+        resources: LogicArrayList[LogicDataTableResource], idx: int, node: CSVNode
+    ):
         resource = resources[idx]
 
         match resource.get_type():
             case 0:
                 LogicDataTables.init_data_table(node, resource.get_table_index())
             case _:
-                Debugger.error("LogicResources.Invalid resource type");
+                Debugger.error("LogicResources.Invalid resource type")
 
-        if (resources.count - 1 == idx):
+        if resources.count - 1 == idx:
             LogicDataTables.create_references()

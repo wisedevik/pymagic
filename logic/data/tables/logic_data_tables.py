@@ -13,6 +13,7 @@ from typing import cast
 
 TABLE_COUNT = 52
 
+
 class LogicDataTables:
     _tables: List[Optional[LogicDataTable]] = [None] * TABLE_COUNT
 
@@ -55,35 +56,45 @@ class LogicDataTables:
         return None
 
     @staticmethod
-    def get_data_by_id_typed(global_id: int, data_type: LogicDataType) -> Optional[LogicData]:
+    def get_data_by_id_typed(
+        global_id: int, data_type: LogicDataType
+    ) -> Optional[LogicData]:
         data = LogicDataTables.get_data_by_id(global_id)
         if data and data.get_data_type() == data_type:
             return data
         return None
 
     @staticmethod
-    def get_data_by_name(name: str, data_type: LogicDataType, caller: Optional[LogicData]) -> Optional[LogicData]:
+    def get_data_by_name(
+        name: str, data_type: LogicDataType, caller: Optional[LogicData]
+    ) -> Optional[LogicData]:
         table = LogicDataTables._tables[data_type]
         assert isinstance(table, LogicDataTable)
 
         return table.get_data_by_name(name, caller)
 
     @staticmethod
-    def get_resource_by_name(name: str, caller: Optional[LogicData]) -> LogicResourceData:
+    def get_resource_by_name(
+        name: str, caller: Optional[LogicData]
+    ) -> LogicResourceData:
         table = LogicDataTables._tables[LogicDataType.RESOURCE]
         assert isinstance(table, LogicDataTable)
 
         return cast(LogicResourceData, table.get_data_by_name(name, caller))
 
     @staticmethod
-    def get_building_by_name(name: str, caller: Optional[LogicData]) -> LogicBuildingData:
+    def get_building_by_name(
+        name: str, caller: Optional[LogicData]
+    ) -> LogicBuildingData:
         table = LogicDataTables._tables[LogicDataType.BUILDING]
         assert isinstance(table, LogicDataTable)
 
         return cast(LogicBuildingData, table.get_data_by_name(name, caller))
 
     @staticmethod
-    def get_building_class_by_name(name: str, caller: Optional[LogicData]) -> Optional[LogicBuildingClassData]:
+    def get_building_class_by_name(
+        name: str, caller: Optional[LogicData]
+    ) -> Optional[LogicBuildingClassData]:
         table = LogicDataTables._tables[LogicDataType.BUILDING_CLASS]
         assert isinstance(table, LogicDataTable)
         if table:

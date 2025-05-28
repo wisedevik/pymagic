@@ -1,4 +1,3 @@
-
 class CSVRow:
     def __init__(self, table) -> None:
         self._table = table
@@ -30,11 +29,13 @@ class CSVRow:
 
     def get_clamped_value(self, name: str, index: int) -> str:
         column_index_by_name = self._table.get_column_index_by_name(name)
-        if (column_index_by_name != -1):
+        if column_index_by_name != -1:
             array_size = self._table.get_array_size_at(self, index)
-            if (array_size >= 1 and array_size <= index):
+            if array_size >= 1 and array_size <= index:
                 index = array_size - 1
-            return self._table.get_value_at(column_index_by_name, index + self._row_offset)
+            return self._table.get_value_at(
+                column_index_by_name, index + self._row_offset
+            )
         return ""
 
     def get_integer_value(self, name: str, index: int) -> int:
@@ -72,7 +73,6 @@ class CSVRow:
 
     def get_table(self):
         return self._table
-
 
     def get_name(self):
         return self._table.get_value_at(0, self._row_offset)

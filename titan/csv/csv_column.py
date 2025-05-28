@@ -2,6 +2,7 @@ from titan.util.logic_array_list import LogicArrayList
 
 from typing import Optional
 
+
 class CSVColumn:
     def __init__(self, type: int, size: int) -> None:
         self._type = type
@@ -56,29 +57,29 @@ class CSVColumn:
         return self._type
 
     def get_array_size(self, start_offset: int, end_offset: int) -> int:
-            match self._type:
-                case 0:
-                    if self._stringValuesList is None:
-                        return 0
-                    for i in range(end_offset - 1, start_offset - 1, -1):
-                        if len(self._stringValuesList[i]) > 0:
-                            return i - start_offset + 1
+        match self._type:
+            case 0:
+                if self._stringValuesList is None:
+                    return 0
+                for i in range(end_offset - 1, start_offset - 1, -1):
+                    if len(self._stringValuesList[i]) > 0:
+                        return i - start_offset + 1
 
-                case 1:
-                    if self._intValuesList is None:
-                        return 0
-                    for i in range(end_offset - 1, start_offset - 1, -1):
-                        if self._intValuesList[i] != 0x7FFFFFFF:
-                            return i - start_offset + 1
+            case 1:
+                if self._intValuesList is None:
+                    return 0
+                for i in range(end_offset - 1, start_offset - 1, -1):
+                    if self._intValuesList[i] != 0x7FFFFFFF:
+                        return i - start_offset + 1
 
-                case 2:
-                    if self._booleanValueList is None:
-                        return 0
-                    for i in range(end_offset - 1, start_offset - 1, -1):
-                        if self._booleanValueList[i] != 0x2:
-                            return i - start_offset + 1
+            case 2:
+                if self._booleanValueList is None:
+                    return 0
+                for i in range(end_offset - 1, start_offset - 1, -1):
+                    if self._booleanValueList[i] != 0x2:
+                        return i - start_offset + 1
 
-            return 0
+        return 0
 
     def set_integer_value(self, value: int, idx: int) -> None:
         self._intValuesList[idx] = value
