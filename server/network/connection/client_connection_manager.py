@@ -1,15 +1,18 @@
 from typing import Tuple
 import socket
 import asyncio
+from typing import Dict
 
 from server.network.connection.client_connection import ClientConnection
 from titan.debug.debugger import Debugger
 
 class ClientConnectionManager:
     def __init__(self) -> None:
-        pass
+        self._sessions: Dict[int, ClientConnection] = {}
 
     def on_connect(self, client_socket: socket.socket, addr: Tuple[str, int]):
+        client_socket.setblocking(False)
+
         Debugger.print(f"[ClientConnectionManager.on_connect] New connection from {addr}");
         asyncio.create_task(self.run_session_async(client_socket))
 

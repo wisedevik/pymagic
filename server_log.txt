@@ -28,3 +28,870 @@
 [INFO] (2025-05-20 01:02) Server stopped
 [INFO] (2025-05-20 01:02) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
 [INFO] (2025-05-20 01:02) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-20 01:03) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-20 01:03) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 00:16) 10
+[INFO] (2025-05-25 00:16) 2
+[INFO] (2025-05-25 00:16) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 00:16) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 00:16) 10
+[INFO] (2025-05-25 00:16) 2
+[INFO] (2025-05-25 00:16) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 00:16) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 00:19) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 00:19) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 00:20) [INFO] Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-25 00:20) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 00:20) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 00:20) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-25 00:20) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 00:21) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 00:21) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-25 00:21) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 00:21) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 00:24) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-25 00:24) [TCPGateway.start] Server is listeting on ('0.0.0.0', 1488))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 00:24) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 00:24) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-25 00:24) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 00:24) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 00:24) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-25 00:24) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 00:24) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 01:01) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-25 01:01) True
+[INFO] (2025-05-25 01:01) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 01:01) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 01:01) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-25 01:01) True
+[INFO] (2025-05-25 01:01) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 01:01) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 01:01) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-25 01:01) True
+[INFO] (2025-05-25 01:01) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 01:01) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 01:01) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-25 01:01) True
+[INFO] (2025-05-25 01:01) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 01:01) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 01:02) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-25 01:02) True
+[INFO] (2025-05-25 01:02) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-25 01:02) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-25 01:02) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-25 01:02) False
+[INFO] (2025-05-25 01:02) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-26 14:04) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 14:04) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-26 14:04) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-26 14:04) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 14:04) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-26 14:04) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-26 14:04) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 14:04) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-26 14:10) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-26 14:10) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 14:10) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 14:10) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-26 14:10) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-26 14:10) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 14:12) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 14:12) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-26 14:12) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-26 14:43) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 14:43) 1
+[INFO] (2025-05-26 14:43) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-26 14:43) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-26 14:43) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 14:43) 1
+[INFO] (2025-05-26 14:43) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-26 14:43) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-26 14:43) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 14:43) 0
+[INFO] (2025-05-26 14:43) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-26 14:43) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-26 14:43) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 14:43) 2
+[INFO] (2025-05-26 14:43) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-26 14:43) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-26 16:00) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 16:00) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 16:01) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 16:01) Town Hall: width: 5 height: 5
+[INFO] (2025-05-26 16:01) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-26 16:01) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-26 16:02) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) cNLI: 14
+[INFO] (2025-05-26 16:02) cNLI: 15
+[INFO] (2025-05-26 16:02) Town Hall: width: 5 height: 5
+[INFO] (2025-05-26 16:02) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-26 16:02) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 09:10) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 09:10) Town Hall: width: 5 height: 5
+[INFO] (2025-05-28 09:10) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 09:11) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 09:13) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 09:13) Town Hall: width: 5 height: 5
+[INFO] (2025-05-28 09:13) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 09:13) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 09:16) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 09:16) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 09:16) Town Hall: width: 5 height: 5
+[INFO] (2025-05-28 09:16) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 09:17) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 10:05) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 10:05) server/assets/csv_logic/buildings.csv
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) Town Hall: width: 5 height: 5
+[INFO] (2025-05-28 10:05) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 10:05) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 10:05) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 10:05) server/assets/csv_logic/buildings.csv
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:05) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:05) Town Hall: width: 5 height: 5
+[INFO] (2025-05-28 10:05) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 10:05) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 10:08) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=1
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=1
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=1
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=1
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=2
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=2
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=2
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=2
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=3
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=3
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=3
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=3
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=4
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=4
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=4
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=4
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=5
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=5
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=5
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=5
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=6
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=6
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=6
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=6
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=7
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=7
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=7
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=7
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=8
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=8
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=8
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=8
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=9
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=9
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=9
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=9
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=10
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=10
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=10
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=10
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=11
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=11
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=11
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=11
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=12
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=12
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=12
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=12
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=13
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=13
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=13
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=13
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=14
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=14
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=14
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=14
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=15
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=15
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=15
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=15
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=16
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=16
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=16
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=16
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=17
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=17
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=17
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=17
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=18
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=18
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=18
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=18
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=19
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=19
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=19
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=19
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=20
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=20
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=20
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=20
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=21
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=21
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=21
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=21
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=22
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=22
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=22
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=22
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=23
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=23
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=23
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=23
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=24
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=24
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=24
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=24
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=25
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=25
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=25
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=25
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=26
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=26
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=26
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=26
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=27
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=27
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=27
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=27
+[INFO] (2025-05-28 10:08) Town Hall: width: 4 height: 4
+[INFO] (2025-05-28 10:08) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 10:08) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 10:08) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=0
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=0
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=1
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=1
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=1
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=1
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=2
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=2
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=2
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=2
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=3
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=3
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=3
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=3
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=4
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=4
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=4
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=4
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=5
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=5
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=5
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=5
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=6
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=6
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=6
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=6
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=7
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=7
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=7
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=7
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=8
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=8
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=8
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=8
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=9
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=9
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=9
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=9
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=10
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=10
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=10
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=10
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=11
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=11
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=11
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=11
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=12
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=12
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=12
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=12
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=13
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=13
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=13
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=13
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=14
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=14
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=14
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=14
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=15
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=15
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=15
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=15
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=16
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=16
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=16
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=16
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=17
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=17
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=17
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=17
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=18
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=18
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=18
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=18
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=19
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=19
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=19
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=19
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=20
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=20
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=20
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=20
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=21
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=21
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=21
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=21
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=22
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=22
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=22
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=22
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=23
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=23
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=23
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=23
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=24
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=24
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=24
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=24
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=25
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=25
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=25
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=25
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=26
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=26
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=26
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=26
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=27
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=27
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=14, index=27
+[INFO] (2025-05-28 10:08) self._columnNameList.index_of(name)=15, index=27
+[INFO] (2025-05-28 10:08) Town Hall: width: 4 height: 4
+[INFO] (2025-05-28 10:08) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 10:08) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 10:11) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 10:11) Town Hall: width: 4 height: 4
+[INFO] (2025-05-28 10:11) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 10:12) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 10:15) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 10:15) Town Hall: width: 4 height: 4
+[INFO] (2025-05-28 10:15) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 10:15) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 10:15) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 10:15) Town Hall: width: 4 height: 4
+[INFO] (2025-05-28 10:15) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 10:15) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 10:16) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 10:16) Town Hall: width: 4 height: 4
+[INFO] (2025-05-28 10:16) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 10:16) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 10:18) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 10:18) Town Hall: width: 4 height: 4
+[INFO] (2025-05-28 10:18) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 10:18) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 10:38) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 10:38) Diamonds: is_premium_currency: True
+[INFO] (2025-05-28 10:38) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 10:38) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 10:38) Working Directory: /home/wisedev/projects/magic_server_dev/integration/wisedev.magic.py
+[INFO] (2025-05-28 10:38) Gold: is_premium_currency: False
+[INFO] (2025-05-28 10:38) [TCPGateway.start] Server is listeting on ('127.0.0.1', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 10:38) [TCPGateway.stop] Server stopped

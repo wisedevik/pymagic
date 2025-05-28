@@ -6,20 +6,21 @@ from server.network.connection.client_connection_manager import ClientConnection
 from titan.debug.debugger import Debugger
 
 class TCPGateway:
-    def __init__(self) -> None:
+    def __init__(self, config: dict) -> None:
+        self._config = config
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self._socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        self._socket.bind(("0.0.0.0", 9339))
+        self._socket.bind((config["host"], config["port"]))
         self._connection_manager = ClientConnectionManager()
 
         self._listen_task = None
         self._running = False
 
     async def start(self) -> None:
-        self._socket.listen(100)
+        self._socket.listen(self._config.get("max_connections", 100))
         self._socket.setblocking(False)
 
-        Debugger.print(f"[TCPGateway.start] Server is listeting on {self._socket.getsockname()})")
+        Debugger.print(f"[TCPGateway.start] Server is listeting on {self._socket.getsockname()})\nPress Ctrl+C to stop it")
 
         self._running = True
         self._listen_task = asyncio.create_task(self._handle_async())
