@@ -1,5 +1,3 @@
-import titan.debug.debugger
-
 from typing import TypeVar, Generic, Iterator, Optional
 
 T = TypeVar('T')

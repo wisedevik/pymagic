@@ -1,7 +1,9 @@
+from logic.data.data_objects.logic_building_class_data import LogicBuildingClassData
 from typing import List, Optional
 
 from logic.data.core.global_id import GlobalID
 from logic.data.core.logic_data import LogicData
+from logic.data.data_objects.logic_building_data import LogicBuildingData
 from logic.data.tables.logic_data_table import LogicDataTable
 from logic.data.core.logic_data_type import LogicDataType
 from titan.csv.csv_node import CSVNode
@@ -72,3 +74,18 @@ class LogicDataTables:
         assert isinstance(table, LogicDataTable)
 
         return cast(LogicResourceData, table.get_data_by_name(name, caller))
+
+    @staticmethod
+    def get_building_by_name(name: str, caller: Optional[LogicData]) -> LogicBuildingData:
+        table = LogicDataTables._tables[LogicDataType.BUILDING]
+        assert isinstance(table, LogicDataTable)
+
+        return cast(LogicBuildingData, table.get_data_by_name(name, caller))
+
+    @staticmethod
+    def get_building_class_by_name(name: str, caller: Optional[LogicData]) -> Optional[LogicBuildingClassData]:
+        table = LogicDataTables._tables[LogicDataType.BUILDING_CLASS]
+        assert isinstance(table, LogicDataTable)
+        if table:
+            return cast(LogicBuildingClassData, table.get_data_by_name(name, caller))
+        return None

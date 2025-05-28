@@ -12,6 +12,7 @@ class LogicResources:
         arrayList = LogicArrayList[LogicDataTableResource](TABLE_COUNT)
         arrayList.add(LogicDataTableResource("server/assets/csv_logic/buildings.csv", LogicDataType.BUILDING, 0))
         arrayList.add(LogicDataTableResource("server/assets/csv_logic/resources.csv", LogicDataType.RESOURCE, 0))
+        arrayList.add(LogicDataTableResource("server/assets/csv_logic/building_classes.csv", LogicDataType.BUILDING_CLASS, 0))
         return arrayList
 
     @staticmethod

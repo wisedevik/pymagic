@@ -1,13 +1,14 @@
 import socket
 import asyncio
 
+from server.network.protocol.message_manager import MessageManager
 from server.network.protocol.messaging import Messaging
 from titan.debug.debugger import Debugger
 
 class ClientConnection:
     def __init__(self, socket: socket.socket) -> None:
         self._client_socket = socket
-        self._messaging = Messaging(self._client_socket)
+        self._messaging = Messaging(self._client_socket, MessageManager(self))
 
         self._receive_buffer = bytearray(8192)
 

@@ -6,7 +6,7 @@ class ServerDebugger(DebuggerListener):
         self._file = open(file_name, 'a')
 
     def _timestamp(self) -> str:
-        return datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+        return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     def _log(self, level: str, message: str) -> None:
         timestamp = self._timestamp()

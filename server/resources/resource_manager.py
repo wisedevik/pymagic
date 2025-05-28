@@ -1,7 +1,6 @@
 from logic.data.tables.logic_data_tables import LogicDataTables
 from logic.data.resources.logic_resources import LogicResources
 from titan.csv.csv_node import CSVNode
-from titan.debug.debugger import Debugger
 
 
 class ResourceManager:

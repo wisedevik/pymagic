@@ -71,6 +71,9 @@ class LogicDataTable:
             case LogicDataType.BUILDING:
                 from logic.data.data_objects.logic_building_data import LogicBuildingData
                 item = LogicBuildingData(row, self)
+            case LogicDataType.BUILDING_CLASS:
+                from logic.data.data_objects.logic_building_class_data import LogicBuildingClassData
+                item = LogicBuildingClassData(row, self)
             case LogicDataType.RESOURCE:
                 from logic.data.data_objects.logic_resource_data import LogicResourceData
                 item = LogicResourceData(row, self)
