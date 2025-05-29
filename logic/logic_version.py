@@ -1,17 +1,7 @@
-from dataclasses import dataclass
-
-from config import Config
+from titan.config import Configuration
 
 
 class LogicVersion:
-    @classmethod
-    def major_version(cls):
-        return Config.get("majorVersion")
-
-    @classmethod
-    def build(cls):
-        return Config.get("build")
-
-    @classmethod
-    def content_version(cls):
-        return Config.get("contentVersion")
+    content_version = Configuration.game.content_version
+    major_version = Configuration.game.major_version
+    build = Configuration.game.build

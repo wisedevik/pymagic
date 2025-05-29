@@ -1,5 +1,5 @@
 from typing import cast
-from config import Config
+from titan.config import Configuration
 from logic import LogicVersion
 from logic.messages.auth import LoginMessage
 from logic.messages.auth import LoginOkMessage
@@ -18,6 +18,7 @@ class MessageManager:
         Debugger.print(
             f"[MessageManager.receive_message] message_type={message.get_message_type()}"
         )
+
         match message.get_message_type():
             case 10101:
                 await self.on_login_message(cast(LoginMessage, message))
@@ -33,13 +34,13 @@ class MessageManager:
         loginOk.account_id = LogicLong(0, 1)
         loginOk.home_id = LogicLong(0, 1)
         loginOk.pass_token = "secret@token"
-        loginOk.environment = Config.get("environment")
-        loginOk.major_version = LogicVersion.major_version()
-        loginOk.build = LogicVersion.build()
-        loginOk.minor_version = LogicVersion.content_version()
+        loginOk.environment = Configuration.game.environment
+        loginOk.major_version = LogicVersion.major_version
+        loginOk.build = LogicVersion.build
+        loginOk.minor_version = LogicVersion.content_version
 
         Debugger.print(
-            f"s_v: {LogicVersion.major_version()}.{LogicVersion.build()}.{LogicVersion.content_version()}"
+            f"s_v: {LogicVersion.major_version}.{LogicVersion.build}.{LogicVersion.content_version}"
         )
 
         await self._connection.send_message(loginOk)
