@@ -5,7 +5,7 @@ from titan.csv.csv_row import CSVRow
 class LogicBuildingClassData(LogicData):
     def __init__(self, row: CSVRow, table):
         super().__init__(row, table)
-        self._canBuy = False
+        self._can_buy = False
         self._worker = False
         self._town_hall = False
         self._wall = False
@@ -16,7 +16,7 @@ class LogicBuildingClassData(LogicData):
     def create_references(self) -> None:
         super().create_references()
 
-        self._canBuy = self._row.get_boolean_value("CanBuy", 0)
+        self._can_buy = self._row.get_boolean_value("CanBuy", 0)
 
         self._worker = "Worker" == self.get_name()
         self._town_hall = "Town Hall" == self.get_name()
@@ -30,7 +30,7 @@ class LogicBuildingClassData(LogicData):
         )
 
     def can_buy(self) -> bool:
-        return self._canBuy
+        return self._can_buy
 
     def is_worker(self) -> bool:
         return self._worker

@@ -43,7 +43,7 @@ class LogicDataTable:
         return self._items.count
 
     def get_item_by_id(self, global_id: int) -> LogicData | None:
-        instance_id = GlobalID.get_instance_ID(global_id)
+        instance_id = GlobalID.get_instance_id(global_id)
         if 0 <= instance_id < self._items.count:
             return self._items[instance_id]
         Debugger.warning("LogicDataTable.get_item_by_id() - Instance id out of bounds!")

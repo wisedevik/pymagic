@@ -13,7 +13,7 @@ class LogicBuildingData(LogicData):
         self._height = 0
         self._produces_units_of_type = 0
         self._damage = []
-        self._housingSpace = []
+        self._housing_space = []
 
     def create_references(self):
         super().create_references()
@@ -31,13 +31,13 @@ class LogicBuildingData(LogicData):
             "ProducesUnitsOfType", 0
         )
 
-        upgLvlCnt = self._upgrade_level_count = self._row.get_longest_array_size()
-        self._damage = [0] * upgLvlCnt
-        self._housingSpace = [0] * upgLvlCnt
+        upg_lvl_cnt = self._upgrade_level_count = self._row.get_longest_array_size()
+        self._damage = [0] * upg_lvl_cnt
+        self._housing_space = [0] * upg_lvl_cnt
 
-        for i in range(upgLvlCnt):
+        for i in range(upg_lvl_cnt):
             self._damage[i] = self._row.get_clamped_integer_value("Damage", i)
-            self._housingSpace[i] = self._row.get_clamped_integer_value(
+            self._housing_space[i] = self._row.get_clamped_integer_value(
                 "HousingSpace", i
             )
 
@@ -55,4 +55,4 @@ class LogicBuildingData(LogicData):
         return self._upgrade_level_count
 
     def get_unit_storage_capacity(self, level: int):
-        return self._housingSpace[level]
+        return self._housing_space[level]

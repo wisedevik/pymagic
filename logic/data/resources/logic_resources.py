@@ -9,25 +9,25 @@ from titan.util.logic_array_list import LogicArrayList
 class LogicResources:
     @staticmethod
     def create_data_table_resources_array() -> LogicArrayList[LogicDataTableResource]:
-        arrayList = LogicArrayList[LogicDataTableResource](TABLE_COUNT)
-        arrayList.add(
+        array_list = LogicArrayList[LogicDataTableResource](TABLE_COUNT)
+        array_list.add(
             LogicDataTableResource(
                 "server/assets/csv_logic/buildings.csv", LogicDataType.BUILDING, 0
             )
         )
-        arrayList.add(
+        array_list.add(
             LogicDataTableResource(
                 "server/assets/csv_logic/resources.csv", LogicDataType.RESOURCE, 0
             )
         )
-        arrayList.add(
+        array_list.add(
             LogicDataTableResource(
                 "server/assets/csv_logic/building_classes.csv",
                 LogicDataType.BUILDING_CLASS,
                 0,
             )
         )
-        return arrayList
+        return array_list
 
     @staticmethod
     def load(

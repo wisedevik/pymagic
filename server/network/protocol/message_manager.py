@@ -12,7 +12,7 @@ from logic.messages.home import OwnHomeDataMessage
 
 class MessageManager:
     def __init__(self, connection):
-        self._connection = connection
+        self.connection = connection
 
     async def receive_message(self, message: PiranhaMessage):
         Debugger.print(
@@ -30,17 +30,17 @@ class MessageManager:
             f"Tryna log in id={message._account_id} token={message.pass_token} v={message.get_version()}"
         )
 
-        loginOk = LoginOkMessage()
-        loginOk.account_id = LogicLong(0, 1)
-        loginOk.home_id = LogicLong(0, 1)
-        loginOk.pass_token = "secret@token"
-        loginOk.environment = Configuration.game.environment
-        loginOk.major_version = LogicVersion.major_version
-        loginOk.build = LogicVersion.build
-        loginOk.minor_version = LogicVersion.content_version
+        login_ok = LoginOkMessage()
+        login_ok.account_id = LogicLong(0, 1)
+        login_ok.home_id = LogicLong(0, 1)
+        login_ok.pass_token = "secret@token"
+        login_ok.environment = Configuration.game.environment
+        login_ok.major_version = LogicVersion.major_version
+        login_ok.build = LogicVersion.build
+        login_ok.minor_version = LogicVersion.content_version
 
         Debugger.print(
             f"s_v: {LogicVersion.major_version}.{LogicVersion.build}.{LogicVersion.content_version}"
         )
 
-        await self._connection.send_message(loginOk)
+        await self.connection.send_message(login_ok)

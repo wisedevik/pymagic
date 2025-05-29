@@ -292,3 +292,36 @@ Press Ctrl+C to stop it
 [WARNING] (2025-05-29 12:35:02) Sent message with type 20104
 [INFO] (2025-05-29 12:38:18) [TCPGateway.stop] Server stopped
 [WARNING] (2025-05-29 12:38:18) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-29 14:35:46) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-29 14:35:51) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 59571)
+[INFO] (2025-05-29 14:35:51) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-29 14:35:51) Tryna log in id=LogicLong(0-1) token=secret@token v=5.2.0
+[INFO] (2025-05-29 14:35:51) s_v: 5.2.0
+[ERROR] (2025-05-29 14:35:51) Unhandled exception in session: name 'loginOk' is not defined
+[WARNING] (2025-05-29 14:35:51) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-29 14:36:02) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-29 14:36:04) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-29 14:36:07) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 59593)
+[INFO] (2025-05-29 14:36:07) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-29 14:36:07) Tryna log in id=LogicLong(0-1) token=secret@token v=5.2.0
+[INFO] (2025-05-29 14:36:07) s_v: 5.2.0
+[WARNING] (2025-05-29 14:36:07) Sent message with type 20104
+[INFO] (2025-05-29 14:36:14) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-29 14:36:14) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-29 14:44:16) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-29 14:44:19) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 59943)
+[INFO] (2025-05-29 14:44:19) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-29 14:44:19) Tryna log in id=LogicLong(0-1) token=secret@token v=5.2.0
+[INFO] (2025-05-29 14:44:19) s_v: 5.2.0
+[WARNING] (2025-05-29 14:44:19) Sent message with type 20104
+[WARNING] (2025-05-29 14:44:27) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-29 14:44:32) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 59951)
+[INFO] (2025-05-29 14:44:32) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-29 14:44:32) Tryna log in id=LogicLong(0-1) token=secret@token v=5.2.0
+[INFO] (2025-05-29 14:44:32) s_v: 5.2.0
+[WARNING] (2025-05-29 14:44:32) Sent message with type 20104
+[INFO] (2025-05-29 14:44:51) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-29 14:44:51) [ClientConnectionManager.run_session_async] User has disconnected
