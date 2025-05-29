@@ -123,3 +123,13 @@ Press Ctrl+C to stop it
 [WARNING] (2025-05-29 08:35:30) Sent message with type 20104
 [INFO] (2025-05-29 08:35:54) [TCPGateway.stop] Server stopped
 [WARNING] (2025-05-29 08:35:54) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-29 08:46:33) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-29 08:46:33) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-29 08:46:36) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 51970)
+[INFO] (2025-05-29 08:46:36) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-29 08:46:36) Tryna log in id=LogicLong(0-1) token=secret@token v=5.2.0
+[INFO] (2025-05-29 08:46:36) s_v: 5.2.0
+[WARNING] (2025-05-29 08:46:36) Sent message with type 20104
+[INFO] (2025-05-29 08:48:20) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-29 08:48:20) [ClientConnectionManager.run_session_async] User has disconnected
