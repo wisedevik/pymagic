@@ -1,7 +1,17 @@
 from titan.datastream.byte_stream import ByteStream
+from typing import Dict, Type
+
+message_registry: Dict[int, Type["PiranhaMessage"]] = {}
 
 
-class PiranhaMessage:
+class PiranhaMessageMeta(type):
+    def __init__(cls, name, bases, attrs):
+        super().__init__(name, bases, attrs)
+        if name != "PiranhaMessage":
+            message_registry[cls().get_message_type()] = cls
+
+
+class PiranhaMessage(metaclass=PiranhaMessageMeta):
     def __init__(self) -> None:
         self.stream = ByteStream(10)
         self.version = 0

@@ -1,8 +1,7 @@
-from ast import Add
 import socket
 import asyncio
 
-from config import Config
+from titan.config import Configuration
 from server.network.connection.client_connection_manager import ClientConnectionManager
 from titan.debug.debugger import Debugger
 
@@ -11,14 +10,14 @@ class TCPGateway:
     def __init__(self) -> None:
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self._socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        self._socket.bind((Config.get("host"), Config.get("port")))
+        self._socket.bind((Configuration.server.host, Configuration.server.port))
         self._connection_manager = ClientConnectionManager()
 
         self._listen_task = None
         self._running = False
 
     async def start(self) -> None:
-        self._socket.listen(Config.get("maxConnections", 100))
+        self._socket.listen(Configuration.server.max_connections)
         self._socket.setblocking(False)
 
         Debugger.print(
