@@ -1,1 +1,125 @@
 [INFO] (2025-05-28 16:20:28) Working Directory: C:\Users\nikit\OneDrive\Документы\magic_server_dev\magic\integration\wisedev.magic.py
+[INFO] (2025-05-28 20:56:29) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 20:56:29) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 20:56:42) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 21:16:59) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 21:16:59) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 21:17:04) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 58069)
+[WARNING] (2025-05-28 21:17:06) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-28 21:17:06) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 58073)
+[WARNING] (2025-05-28 21:17:06) Too long String encountered, max 900001
+[INFO] (2025-05-28 21:17:06) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-28 21:17:06) Tryna log in id=LogicLong(0-0) token=None v=5.2.0
+[INFO] (2025-05-28 21:17:06) s_v: 5.2.0
+[WARNING] (2025-05-28 21:17:06) Sent message with type 20104
+[INFO] (2025-05-28 21:19:32) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-28 21:19:32) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-28 21:26:23) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 21:26:49) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 21:26:49) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 21:26:52) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 58482)
+[INFO] (2025-05-28 21:28:08) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 21:28:10) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 21:28:10) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 21:28:13) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 58594)
+[INFO] (2025-05-28 21:28:56) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-28 21:28:56) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-28 21:28:57) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 21:28:57) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 21:28:59) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 58649)
+[INFO] (2025-05-28 21:29:40) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-28 21:29:40) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-28 21:30:36) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 21:30:37) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 21:30:40) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 58741)
+[ERROR] (2025-05-28 21:30:40) Unhandled exception in session: LoginMessage.get_message_type() takes 0 positional arguments but 1 was given
+[WARNING] (2025-05-28 21:30:40) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-28 21:31:13) [TCPGateway.stop] Server stopped
+[INFO] (2025-05-28 21:32:24) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 21:32:24) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 21:32:27) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 58827)
+[INFO] (2025-05-28 21:32:27) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-28 21:32:27) Tryna log in id=LogicLong(0-1) token=secret@token v=5.2.0
+[INFO] (2025-05-28 21:32:27) s_v: 5.2.0
+[WARNING] (2025-05-28 21:32:27) Sent message with type 20104
+[INFO] (2025-05-28 21:32:59) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-28 21:32:59) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-28 21:59:43) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 21:59:44) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 21:59:46) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 59589)
+[INFO] (2025-05-28 21:59:55) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-28 21:59:55) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-28 22:00:26) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 22:00:26) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 22:00:28) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 59644)
+[INFO] (2025-05-28 22:03:01) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-28 22:03:01) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-28 22:03:23) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 22:03:23) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 22:03:27) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 59806)
+[INFO] (2025-05-28 22:03:27) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-28 22:03:27) Tryna log in id=LogicLong(0-1) token=secret@token v=5.2.0
+[INFO] (2025-05-28 22:03:27) s_v: 5.2.0
+[WARNING] (2025-05-28 22:03:27) Sent message with type 20104
+[INFO] (2025-05-28 22:03:53) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-28 22:03:53) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-28 22:09:31) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 22:09:31) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 22:09:36) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 60139)
+[INFO] (2025-05-28 22:09:36) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-28 22:09:36) Tryna log in id=LogicLong(0-1) token=secret@token v=5.2.0
+[INFO] (2025-05-28 22:09:36) s_v: 5.2.0
+[WARNING] (2025-05-28 22:09:36) Sent message with type 20104
+[INFO] (2025-05-28 22:10:13) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-28 22:10:13) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-28 22:10:14) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-28 22:10:14) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-28 22:10:19) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 60185)
+[INFO] (2025-05-28 22:10:19) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-28 22:10:19) Tryna log in id=LogicLong(0-1) token=secret@token v=5.2.0
+[INFO] (2025-05-28 22:10:19) s_v: 5.2.0
+[WARNING] (2025-05-28 22:10:19) Sent message with type 20104
+[INFO] (2025-05-28 22:11:08) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-28 22:11:08) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-29 08:30:16) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-29 08:30:16) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-29 08:32:04) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 50660)
+[INFO] (2025-05-29 08:32:04) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-29 08:32:04) Tryna log in id=LogicLong(0-1) token=secret@token v=5.2.0
+[INFO] (2025-05-29 08:32:04) s_v: 5.2.0
+[WARNING] (2025-05-29 08:32:04) Sent message with type 20104
+[INFO] (2025-05-29 08:33:09) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-29 08:33:09) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-29 08:34:05) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-29 08:34:05) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-29 08:34:09) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 51169)
+[INFO] (2025-05-29 08:34:09) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-29 08:34:09) Tryna log in id=LogicLong(0-1) token=secret@token v=5.2.0
+[INFO] (2025-05-29 08:34:09) s_v: 5.2.0
+[WARNING] (2025-05-29 08:34:09) Sent message with type 20104
+[INFO] (2025-05-29 08:34:21) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-29 08:34:21) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-05-29 08:35:27) Working Directory: C:\Users\user\Documents\GitHub\magic_wise
+[INFO] (2025-05-29 08:35:27) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-05-29 08:35:30) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 51520)
+[INFO] (2025-05-29 08:35:30) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-05-29 08:35:30) Tryna log in id=LogicLong(0-1) token=secret@token v=5.2.0
+[INFO] (2025-05-29 08:35:30) s_v: 5.2.0
+[WARNING] (2025-05-29 08:35:30) Sent message with type 20104
+[INFO] (2025-05-29 08:35:54) [TCPGateway.stop] Server stopped
+[WARNING] (2025-05-29 08:35:54) [ClientConnectionManager.run_session_async] User has disconnected

@@ -1,7 +1,5 @@
 from titan.message.piranha_message import PiranhaMessage
 
-MESSAGE_TYPE = 24101
-
 
 class OwnHomeDataMessage(PiranhaMessage):
     def __init__(self) -> None:
@@ -10,7 +8,7 @@ class OwnHomeDataMessage(PiranhaMessage):
     def encode(self): ...
 
     def get_message_type(self) -> int:
-        return MESSAGE_TYPE
+        return 24101
 
     def get_service_node_type(self) -> int:
         return 10

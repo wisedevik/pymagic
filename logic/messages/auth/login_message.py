@@ -1,12 +1,8 @@
-from logic.messages.message_registry import piranha_message
 from titan.debug.debugger import Debugger
 from titan.message.piranha_message import PiranhaMessage
 from titan.math.logic_long import LogicLong
 
-MESSAGE_TYPE = 10101
 
-
-@piranha_message(MESSAGE_TYPE)
 class LoginMessage(PiranhaMessage):
     def __init__(self) -> None:
         super().__init__()
@@ -25,7 +21,7 @@ class LoginMessage(PiranhaMessage):
         self._build = self.stream.read_int()
 
     def get_message_type(self) -> int:
-        return MESSAGE_TYPE
+        return 10101
 
     def get_service_node_type(self) -> int:
         return 1

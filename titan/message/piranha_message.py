@@ -1,7 +1,21 @@
 from titan.datastream.byte_stream import ByteStream
+import importlib
+import pathlib
+from typing import Dict, Type
+
+message_registry: Dict[int, Type["PiranhaMessage"]] = {}
 
 
-class PiranhaMessage:
+class PiranhaMessageMeta(type):
+    def __init__(cls, name, bases, attrs):
+        super().__init__(name, bases, attrs)
+        if name != "PiranhaMessage":
+            message_registry[cls().get_message_type()] = cls
+
+
+class PiranhaMessage(metaclass=PiranhaMessageMeta):
+    message_type = 0
+
     def __init__(self) -> None:
         self.stream = ByteStream(10)
         self.version = 0
@@ -11,7 +25,7 @@ class PiranhaMessage:
     def encode(self): ...
 
     def get_message_type(self) -> int:
-        return 0
+        return self.message_type
 
     def get_service_node_type(self) -> int:
         return -1
@@ -23,7 +37,7 @@ class PiranhaMessage:
         self.version = version
 
     def is_server_to_client_message(self) -> bool:
-        return self.get_message_type() >= 20000
+        return self.message_type >= 20000
 
     def get_message_bytes(self) -> bytearray:
         return self.stream.get_byte_array()

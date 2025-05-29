@@ -1,9 +1,9 @@
 {
-  "host": "0.0.0.0",
-  "port": 9339,
-  "maxConnections": 100,
-  "environment": "int",
-  "majorVersion": 5,
-  "build": 2,
-  "contentVersion": 0
+    "host": "0.0.0.0",
+    "port": 9339,
+    "maxConnections": 100,
+    "environment": "int",
+    "majorVersion": 5,
+    "build": 2,
+    "contentVersion": 0
 }
