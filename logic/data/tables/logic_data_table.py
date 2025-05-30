@@ -88,6 +88,10 @@ class LogicDataTable:
                 )
 
                 item = LogicResourceData(row, self)
+            case LogicDataType.MISSION:
+                from logic.data.data_objects.logic_mission_data import LogicMissionData
+
+                item = LogicMissionData(row, self)
             case _:
                 Debugger.error(f"Invalid data table id: {self._table_idx}")
 

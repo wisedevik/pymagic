@@ -80,9 +80,7 @@ class CSVTable:
         return 0
 
     def get_integer_value(self, name: str, index: int) -> int:
-        return self.get_integer_value_at(
-            self._column_name_list.index_of(name), index
-        )
+        return self.get_integer_value_at(self._column_name_list.index_of(name), index)
 
     def get_boolean_value_at(self, column_index: int, index: int) -> bool:
         if column_index >= 0:
@@ -90,9 +88,7 @@ class CSVTable:
         return False
 
     def get_boolean_value(self, name: str, index: int) -> bool:
-        return self.get_boolean_value_at(
-            self._column_name_list.index_of(name), index
-        )
+        return self.get_boolean_value_at(self._column_name_list.index_of(name), index)
 
     def get_row_at(self, index: int) -> CSVRow:
         return self._row_list[index]

@@ -78,7 +78,7 @@ class ByteStream(ChecksumEncoder):
             return None
 
         if length <= max_capacity:
-            array = self.buffer[self.offset:self.offset + length]
+            array = self.buffer[self.offset : self.offset + length]
             self.offset += length
             return array
 
@@ -92,9 +92,9 @@ class ByteStream(ChecksumEncoder):
             if length != -1:
                 Debugger.warning("Too long String encountered.")
             return None
-        
+
         if length <= max_capacity:
-            byte_array = self.buffer[self.offset:self.offset + length]
+            byte_array = self.buffer[self.offset : self.offset + length]
             string_value = byte_array.decode("utf-8")
             self.offset += length
             return string_value
@@ -108,7 +108,7 @@ class ByteStream(ChecksumEncoder):
         if length <= -1:
             Debugger.warning("Negative String length encountered.")
         elif length <= max_capacity:
-            byte_array = self.buffer[self.offset:self.offset + length]
+            byte_array = self.buffer[self.offset : self.offset + length]
             string_value = byte_array.decode("utf-8")
             self.offset += length
             return string_value
@@ -166,7 +166,7 @@ class ByteStream(ChecksumEncoder):
         else:
             self.ensure_capacity(length + 4)
             self.write_int(length)
-            self.buffer[self.offset:self.offset + length] = value
+            self.buffer[self.offset : self.offset + length] = value
             self.offset += length
 
     def write_string(self, value: str) -> None:
@@ -181,7 +181,7 @@ class ByteStream(ChecksumEncoder):
             if length <= 900001:
                 self.ensure_capacity(length + 4)
                 self.write_int(length)
-                self.buffer[self.offset:self.offset + length] = bytes_value
+                self.buffer[self.offset : self.offset + length] = bytes_value
                 self.offset += length
             else:
                 print(f"ByteStream.write_string invalid string length {length}")
@@ -195,7 +195,7 @@ class ByteStream(ChecksumEncoder):
         if length <= 900001:
             self.ensure_capacity(length + 4)
             self.write_int(length)
-            self.buffer[self.offset:self.offset + length] = bytes_value
+            self.buffer[self.offset : self.offset + length] = bytes_value
             self.offset += length
         else:
             print(f"ByteStream.write_string invalid string length {length}")

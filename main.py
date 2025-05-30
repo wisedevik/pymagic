@@ -1,5 +1,7 @@
 import asyncio
 
+from logic.avatar.logic_client_avatar import LogicClientAvatar
+from logic.data.tables.logic_data_tables import LogicDataTables
 from server.network.tcp.tcp_gateway import TCPGateway
 from titan.config import Configuration
 from server.debug.server_debugger import ServerDebugger

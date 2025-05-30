@@ -1,5 +1,5 @@
-from logic.data.global_id import GlobalID
-from logic.data.logic_data_type import LogicDataType
+from logic.data.core.global_id import GlobalID
+from logic.data.core.logic_data_type import LogicDataType
 from titan.csv.csv_row import CSVRow
 
 

@@ -1,3 +1,4 @@
+from enum import member
 from re import L
 import socket
 import asyncio
@@ -61,17 +62,17 @@ class Messaging:
         if message.get_encoding_length() == 0:
             message.encode()
 
-            encoding_length = message.get_encoding_length()
-            encoding_bytes = message.get_message_bytes()
+        encoding_length = message.get_encoding_length()
+        encoding_bytes = message.get_message_bytes()
 
-            encrypted_bytes = self._send_encrypter.encrypt(encoding_bytes)
+        encrypted_bytes = self._send_encrypter.encrypt(encoding_bytes)
 
-            stream = bytearray(encoding_length + HEADER_SIZE)
-            Messaging.write_header(message, stream, encoding_length)
-            stream[HEADER_SIZE:] = encrypted_bytes
+        stream = bytearray(encoding_length + HEADER_SIZE)
+        Messaging.write_header(message, stream, encoding_length)
+        stream[HEADER_SIZE:] = encrypted_bytes
 
-            await self._send_all(stream)
-            Debugger.warning(f"Sent message with type {message.get_message_type()}")
+        await self._send_all(stream)
+        Debugger.warning(f"Sent message with type {message.get_message_type()} length={message.get_encoding_length()}")
 
     async def _send_all(self, data: bytearray):
         total_sent = 0

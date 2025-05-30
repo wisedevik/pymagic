@@ -31,8 +31,8 @@ class MessageManager:
         )
 
         login_ok = LoginOkMessage()
-        login_ok.account_id = LogicLong(0, 1)
-        login_ok.home_id = LogicLong(0, 1)
+        login_ok.account_id = LogicLong(0, 32)
+        login_ok.home_id = LogicLong(0, 32)
         login_ok.pass_token = "secret@token"
         login_ok.environment = Configuration.game.environment
         login_ok.major_version = LogicVersion.major_version
@@ -44,3 +44,4 @@ class MessageManager:
         )
 
         await self.connection.send_message(login_ok)
+        await self.connection.send_message(OwnHomeDataMessage())

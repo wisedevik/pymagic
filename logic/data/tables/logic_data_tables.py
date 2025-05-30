@@ -16,6 +16,8 @@ TABLE_COUNT = 52
 
 class LogicDataTables:
     _tables: List[Optional[LogicDataTable]] = [None] * TABLE_COUNT
+    gold_data: LogicResourceData
+    elixir_data: LogicResourceData
 
     @staticmethod
     def init():
@@ -41,6 +43,19 @@ class LogicDataTables:
                 table = LogicDataTables._tables[i]
                 assert isinstance(table, LogicDataTable)
                 table.create_references()
+
+        LogicDataTables.gold_data = LogicDataTables.get_resource_by_name("Gold", None)
+        LogicDataTables.elixir_data = LogicDataTables.get_resource_by_name(
+            "Elixir", None
+        )
+
+    @staticmethod
+    def get_gold_data() -> LogicResourceData:
+        return LogicDataTables.gold_data
+
+    @staticmethod
+    def get_elixir_data() -> LogicResourceData:
+        return LogicDataTables.elixir_data
 
     @staticmethod
     def get_table(table_index: LogicDataType) -> Optional[LogicDataTable]:

@@ -27,6 +27,12 @@ class LogicResources:
                 0,
             )
         )
+
+        array_list.add(
+            LogicDataTableResource(
+                "server/assets/csv_logic/missions.csv", LogicDataType.MISSION, 0
+            )
+        )
         return array_list
 
     @staticmethod
