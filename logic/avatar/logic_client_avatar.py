@@ -19,12 +19,13 @@ class LogicClientAvatar(LogicAvatar):
     def get_default_avatar():
         avatar = LogicClientAvatar()
 
-        # TODO: Replace hardcode to LogicGlobals data
-        avatar.diamonds = 5000
-        avatar.free_diamonds = 5000
+        globals = LogicDataTables.get_globals()
 
-        avatar.set_resource_count(LogicDataTables.get_gold_data(), 1000)
-        avatar.set_resource_count(LogicDataTables.get_elixir_data(), 1000)
+        avatar.diamonds = globals.get_starting_diamonds()
+        avatar.free_diamonds = globals.get_starting_diamonds()
+
+        avatar.set_resource_count(LogicDataTables.get_gold_data(), globals.get_starting_gold())
+        avatar.set_resource_count(LogicDataTables.get_elixir_data(), globals.get_starting_elixir())
 
         table = LogicDataTables.get_table(LogicDataType.MISSION)
 
@@ -40,8 +41,8 @@ class LogicClientAvatar(LogicAvatar):
     def encode(self, encoder: ChecksumEncoder):
         super().encode(encoder)
 
-        encoder.write_long(LogicLong(0, 32))
-        encoder.write_long(LogicLong(0, 32))
+        encoder.write_long(LogicLong(0, 1))
+        encoder.write_long(LogicLong(0, 1))
         encoder.write_boolean(False)
         encoder.write_boolean(False)
         encoder.write_boolean(False)

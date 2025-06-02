@@ -102,3 +102,26 @@
 [WARNING] (2025-06-02 17:26:21) [Messaging.on_receive] Unhandled message type: 14102
 [WARNING] (2025-06-02 17:26:22) [Messaging.on_receive] Unhandled message type: 14102
 [WARNING] (2025-06-02 17:26:22) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 14:20:32) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 14:20:33) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-02 14:24:55) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 14:24:58) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-02 14:26:28) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 14:26:46) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-02 14:28:47) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 14:28:51) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 40898)
+[INFO] (2025-06-02 14:28:51) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 14:28:51) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 14:28:51) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 14:28:51) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 14:28:51) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 14:28:51) [Messaging.send] Sent message 24101
+[WARNING] (2025-06-02 14:28:57) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 14:28:58) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 14:28:59) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 14:29:00) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 14:29:01) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 14:29:02) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 14:29:04) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 14:32:20) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 14:32:21) [TCPGateway.stop] Server stopped

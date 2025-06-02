@@ -6,6 +6,7 @@ from server.debug.server_debugger import ServerDebugger
 from server.resources import ResourceManager
 from titan.debug.debugger import Debugger
 from logic.data.core.logic_data_type import LogicDataType
+from logic.data.tables import LogicDataTables
 
 from pyfiglet import figlet_format
 

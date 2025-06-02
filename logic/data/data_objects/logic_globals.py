@@ -19,13 +19,22 @@ class LogicGlobals(LogicDataTable):
     def get_global_data(self, name) -> LogicGlobalData:
         from logic.data.tables import LogicDataTables
 
-        return LogicDataTables.get_global_by_name(name)
+        return LogicDataTables.get_global_by_name(name, None)
+
+    def get_starting_gold(self):
+        return self.starting_gold
+    
+    def get_starting_diamonds(self):
+        return self.starting_diamonds
+    
+    def get_starting_elixir(self):
+        return self.starting_elixir
 
     def get_bool_value(self, name):
-        self.get_global_data(name).get_boolean_value()
+        return self.get_global_data(name).get_boolean_value()
 
     def get_int_value(self, name):
-        self.get_global_data(name).get_number_value()
+        return self.get_global_data(name).get_number_value()
 
     def get_value(self, name):
-        self.get_global_data(name).get_text_value()
+        return self.get_global_data(name).get_text_value()

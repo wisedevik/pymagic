@@ -92,6 +92,10 @@ class LogicDataTable:
                 from logic.data.data_objects.logic_mission_data import LogicMissionData
 
                 item = LogicMissionData(row, self)
+            case LogicDataType.GLOBAL:
+                from logic.data.data_objects.logic_global_data import LogicGlobalData
+
+                item = LogicGlobalData(row, self)
             case _:
                 Debugger.error(f"Invalid data table id: {self._table_idx}")
 

@@ -97,7 +97,8 @@ class LogicDataTables:
 
     @staticmethod
     def get_globals() -> LogicGlobals:
-        return LogicDataTables._tables[LogicDataType.GLOBAL]
+        table = LogicDataTables._tables[LogicDataType.GLOBAL]
+        return table
 
     @staticmethod
     def get_resource_by_name(
