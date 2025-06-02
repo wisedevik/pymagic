@@ -4,12 +4,10 @@ from logic.data.data_objects.logic_mission_data import LogicMissionData
 from logic.data.tables.logic_data_table import LogicDataTable
 from logic.data.tables.logic_data_tables import LogicDataTables
 from titan.datastream.checksum_encoder import ChecksumEncoder
-<<<<<<< Updated upstream
-=======
 from titan.debug.debugger import Debugger
 from logic.helper import ByteStreamHelper
->>>>>>> Stashed changes
 from titan.math.logic_long import LogicLong
+from logic.data.core.logic_data_type import LogicDataType
 
 
 class LogicClientAvatar(LogicAvatar):
@@ -28,9 +26,6 @@ class LogicClientAvatar(LogicAvatar):
         avatar.free_diamonds = 500
 
         avatar.set_resource_count(LogicDataTables.get_gold_data(), 1000)
-<<<<<<< Updated upstream
-        avatar.set_resource_count(LogicDataTables.get_elixir_data(), 900)
-=======
         avatar.set_resource_count(LogicDataTables.get_elixir_data(), 1000)
 
         table = LogicDataTables.get_table(LogicDataType.MISSION)
@@ -41,7 +36,6 @@ class LogicClientAvatar(LogicAvatar):
             )
             if missionData:
                 avatar.set_mission_completed(missionData, True)
->>>>>>> Stashed changes
 
         return avatar
 
@@ -58,12 +52,12 @@ class LogicClientAvatar(LogicAvatar):
         encoder.write_int(0)
         encoder.write_int(0)
         encoder.write_int(0)
-        encoder.write_string("Name") # Name
+        encoder.write_string("MagicPy") # Name
         encoder.write_string("")
         encoder.write_int(1)
         encoder.write_int(0)
-        encoder.write_int(1) # Diamonds
-        encoder.write_int(0)
+        encoder.write_int(self.diamonds) # Diamonds
+        encoder.write_int(self.free_diamonds)
         encoder.write_int(0)
         encoder.write_int(0)
         encoder.write_int(0)
@@ -75,7 +69,10 @@ class LogicClientAvatar(LogicAvatar):
         encoder.write_int(0)
 
         encoder.write_int(0)
-        encoder.write_int(0)
+        encoder.write_int(self.resource_count.count)
+        for item in self.resource_count:
+            item.encode(encoder)
+
         encoder.write_int(0)
         encoder.write_int(0)
         encoder.write_int(0)
@@ -85,16 +82,9 @@ class LogicClientAvatar(LogicAvatar):
         encoder.write_int(0)
         encoder.write_int(0)
 
-<<<<<<< Updated upstream
-        listik = list(range(21000000, 21000013))
-        encoder.write_int(len(listik)) # skip tutorial
-        for item in listik:
-            encoder.write_int(item)
-=======
         encoder.write_int(self.mission_completed.count)  # skip tutorial
         for item in self.mission_completed:
             ByteStreamHelper.write_data_reference(encoder, item)
->>>>>>> Stashed changes
 
         encoder.write_int(0)
         encoder.write_int(0)

@@ -365,3 +365,41 @@ Press Ctrl+C to stop it
 [WARNING] (2025-05-29 15:01:43) Sent message with type 20104 length=91
 [WARNING] (2025-05-29 15:01:43) Sent message with type 24101 length=2156
 [WARNING] (2025-05-29 15:01:50) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-06-02 09:56:24) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-06-02 09:56:36) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 45686)
+[ERROR] (2025-06-02 09:56:36) Unhandled exception in session: name 'buffer' is not defined
+[WARNING] (2025-06-02 09:56:36) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-06-02 09:58:13) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-02 09:58:14) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-06-02 09:58:15) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 40072)
+[ERROR] (2025-06-02 09:58:15) Unhandled exception in session: unsupported operand type(s) for +=: 'int' and 'NoneType'
+[WARNING] (2025-06-02 09:58:15) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-06-02 09:59:13) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-02 09:59:14) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-06-02 09:59:14) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 49766)
+[INFO] (2025-06-02 09:59:14) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-06-02 09:59:14) Tryna log in id=LogicLong(0-32) token=e4ce2aab82dc0de94e76caa4b7b32466 v=5.2.0
+[INFO] (2025-06-02 09:59:14) s_v: 5.2.0
+[WARNING] (2025-06-02 09:59:14) Sent message 20104
+[WARNING] (2025-06-02 09:59:14) Sent message 24101
+[WARNING] (2025-06-02 09:59:20) Unhandled message type: 14102
+[WARNING] (2025-06-02 09:59:21) Unhandled message type: 14102
+[WARNING] (2025-06-02 09:59:22) Unhandled message type: 14102
+[WARNING] (2025-06-02 09:59:23) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-06-02 09:59:43) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-02 09:59:44) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-06-02 09:59:47) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 39318)
+[INFO] (2025-06-02 09:59:47) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-06-02 09:59:47) Tryna log in id=LogicLong(0-32) token=e4ce2aab82dc0de94e76caa4b7b32466 v=5.2.0
+[INFO] (2025-06-02 09:59:47) s_v: 5.2.0
+[WARNING] (2025-06-02 09:59:47) Sent message 20104
+[WARNING] (2025-06-02 09:59:47) Sent message 24101
+[WARNING] (2025-06-02 09:59:53) Unhandled message type: 14102
+[WARNING] (2025-06-02 09:59:54) Unhandled message type: 14102
+[WARNING] (2025-06-02 09:59:55) Unhandled message type: 14102
+[WARNING] (2025-06-02 09:59:56) Unhandled message type: 14102
+[WARNING] (2025-06-02 09:59:57) [ClientConnectionManager.run_session_async] User has disconnected

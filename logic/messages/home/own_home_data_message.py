@@ -11,7 +11,7 @@ class OwnHomeDataMessage(PiranhaMessage):
         super().encode()
         self.stream.write_int(0)
         LogicClientHome().encode(self.stream)
-        LogicClientAvatar().encode(self.stream)
+        LogicClientAvatar.get_default_avatar().encode(self.stream)
 
     def get_message_type(self) -> int:
         return 24101

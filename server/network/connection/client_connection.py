@@ -16,24 +16,20 @@ class ClientConnection:
 
     async def receive(self):
         loop = asyncio.get_running_loop()
-
         recv_idx = 0
+        buffer = bytearray(8192)
+
         while True:
             data = await loop.sock_recv(self._client_socket, 4096)
             if not data:
                 break
 
-            self._receive_buffer[recv_idx : recv_idx + len(data)] = data
+            buffer[recv_idx : recv_idx + len(data)] = data
             recv_idx += len(data)
 
-<<<<<<< Updated upstream
-            await self._messaging.on_receive(self._receive_buffer, recv_idx)
-=======
             offset = 0
             while True:
-                consumed = await self._messaging.on_receive(
-                    buffer[offset:], recv_idx - offset
-                )
+                consumed = await self._messaging.on_receive(buffer[offset:], recv_idx - offset)
                 if consumed == 0:
                     break
                 offset += consumed
@@ -42,7 +38,6 @@ class ClientConnection:
                 buffer[: recv_idx - offset] = buffer[offset:recv_idx]
                 recv_idx -= offset
                 offset = 0
->>>>>>> Stashed changes
 
     async def send_message(self, message: PiranhaMessage):
         await self._messaging.send(message)

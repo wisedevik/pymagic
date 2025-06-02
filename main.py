@@ -8,6 +8,7 @@ from titan.config import Configuration
 from server.debug.server_debugger import ServerDebugger
 from server.resources.resource_manager import ResourceManager
 from titan.debug.debugger import Debugger
+from logic.data.core.logic_data_type import LogicDataType
 
 
 async def main():
