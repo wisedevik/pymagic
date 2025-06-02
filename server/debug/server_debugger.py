@@ -20,7 +20,6 @@ class ServerDebugger(DebuggerListener):
                 caller_frame = caller_frame.f_back
 
             frame_info = inspect.getframeinfo(caller_frame)
-            class_name = ""
 
             if "self" in caller_frame.f_locals:
                 instance = caller_frame.f_locals["self"]

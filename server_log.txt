@@ -83,3 +83,22 @@
 [WARNING] (2025-06-02 15:51:36) [Messaging.on_receive] Unhandled message type: 14102
 [WARNING] (2025-06-02 15:51:37) [Messaging.on_receive] Unhandled message type: 14102
 [WARNING] (2025-06-02 15:51:37) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 17:26:03) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 17:26:10) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 57834)
+[INFO] (2025-06-02 17:26:10) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 17:26:10) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 17:26:10) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 17:26:10) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 17:26:10) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 17:26:10) [Messaging.send] Sent message 24101
+[WARNING] (2025-06-02 17:26:13) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 17:26:14) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 17:26:15) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 17:26:16) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 17:26:17) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 17:26:18) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 17:26:19) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 17:26:20) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 17:26:21) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 17:26:22) [Messaging.on_receive] Unhandled message type: 14102
+[WARNING] (2025-06-02 17:26:22) [ClientConnectionManager.on_connect] User has disconnected
