@@ -1,16 +1,10 @@
 from typing import List
-from . import LogicJSONNode, LogicJSONNodeType
-from . import LogicJSONArray
-from . import LogicJSONObject
-from . import LogicJSONString
-from . import LogicJSONBoolean
-from . import LogicJSONNull
-from . import LogicJSONNumber
+
 
 
 class LogicJSONParser:
     @staticmethod
-    def create_json_string(root: LogicJSONNode, ensure_capacity: int = 20) -> str:
+    def create_json_string(root, ensure_capacity: int = 20) -> str:
         builder = []
         root.write_to_string(builder)
         return "".join(builder)
@@ -49,11 +43,11 @@ class LogicJSONParser:
         print(f"JSON Parse error: {error}")
 
     @staticmethod
-    def parse(json: str) -> LogicJSONNode:
+    def parse(json: str):
         return LogicJSONParser.parse_value(CharStream(json))
 
     @staticmethod
-    def parse_value(stream: "CharStream") -> LogicJSONNode:
+    def parse_value(stream: "CharStream"):
         stream.skip_whitespace()
         char_value = stream.next_char()
         node = None
@@ -78,16 +72,17 @@ class LogicJSONParser:
         return node
 
     @staticmethod
-    def parse_array(json: str) -> LogicJSONArray:
+    def parse_array(json: str):
         return LogicJSONParser.parse_array(CharStream(json))
 
     @staticmethod
-    def _parse_array(stream: "CharStream") -> LogicJSONArray:
+    def _parse_array(stream: "CharStream"):
         stream.skip_whitespace()
         if stream.read() != "[":
             LogicJSONParser.parse_error("Not an array")
             return None
 
+        from .logic_json_array import LogicJSONArray
         json_array = LogicJSONArray()
         stream.skip_whitespace()
         next_char = stream.next_char()
@@ -115,15 +110,17 @@ class LogicJSONParser:
         return None
 
     @staticmethod
-    def parse_object(json: str) -> LogicJSONObject:
+    def parse_object(json: str):
         return LogicJSONParser._parse_object(CharStream(json))
 
     @staticmethod
-    def _parse_object(stream: "CharStream") -> LogicJSONObject:
+    def _parse_object(stream: "CharStream"):
         stream.skip_whitespace()
         if stream.read() != "{":
             LogicJSONParser.parse_error("Not an object")
             return None
+
+        from . import LogicJSONObject
 
         json_object = LogicJSONObject()
         stream.skip_whitespace()
@@ -162,7 +159,7 @@ class LogicJSONParser:
         return None
 
     @staticmethod
-    def parse_string(stream: "CharStream") -> LogicJSONString:
+    def parse_string(stream: "CharStream"):
         stream.skip_whitespace()
         if stream.read() != '"':
             LogicJSONParser.parse_error("Not a string")
@@ -204,7 +201,7 @@ class LogicJSONParser:
         return LogicJSONString("".join(builder))
 
     @staticmethod
-    def parse_boolean(stream: "CharStream") -> LogicJSONBoolean:
+    def parse_boolean(stream: "CharStream"):
         stream.skip_whitespace()
         next_char = stream.read()
 
@@ -224,19 +221,20 @@ class LogicJSONParser:
         return None
 
     @staticmethod
-    def parse_null(stream: "CharStream") -> LogicJSONNull:
+    def parse_null(stream: "CharStream"):
         stream.skip_whitespace()
         next_char = stream.read()
 
         if next_char == "n":
             if stream.read() == "u" and stream.read() == "l" and stream.read() == "l":
+                from .logic_json_null import LogicJSONNull
                 return LogicJSONNull()
 
         LogicJSONParser.parse_error("Not a null")
         return None
 
     @staticmethod
-    def parse_number(stream: "CharStream") -> LogicJSONNumber:
+    def parse_number(stream: "CharStream"):
         stream.skip_whitespace()
         next_char = stream.next_char()
         multiplier = 1
@@ -257,6 +255,7 @@ class LogicJSONParser:
                 LogicJSONParser.parse_error("JSON floats not supported")
                 return None
 
+            from .logic_json_number import LogicJSONNumber
             return LogicJSONNumber(value * multiplier)
 
         LogicJSONParser.parse_error("Not a number")

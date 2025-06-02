@@ -1,15 +1,14 @@
 from typing import List
 
 from . import LogicJSONNumber
-from . import LogicJSONObject
 from . import LogicJSONString
 from . import LogicJSONNode, LogicJSONNodeType
 from . import LogicJSONBoolean
 
 
 class LogicJSONArray(LogicJSONNode):
-    def __init__(self, capacity: int = 20):
-        self.m_items: List[LogicJSONNode] = [None] * capacity if capacity > 0 else []
+    def __init__(self, capacity: int = 0):
+        self.m_items: List[LogicJSONNode] = []
 
     def get(self, idx: int) -> LogicJSONNode:
         return self.m_items[idx]
@@ -44,7 +43,7 @@ class LogicJSONArray(LogicJSONNode):
             return None
         return node
 
-    def get_json_object(self, index: int) -> LogicJSONObject:
+    def get_json_object(self, index: int):
         node = self.m_items[index]
         if node.get_type() != LogicJSONNodeType.OBJECT:
             print(

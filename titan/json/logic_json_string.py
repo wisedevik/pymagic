@@ -1,5 +1,5 @@
-from . import LogicJSONNode, LogicJSONNodeType
-from . import LogicJSONParser
+from .logic_json_node import LogicJSONNode, LogicJSONNodeType
+from .logic_json_parser import LogicJSONParser
 
 
 class LogicJSONString(LogicJSONNode):

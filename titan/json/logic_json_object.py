@@ -1,11 +1,6 @@
 from typing import Dict, List
 
-from . import LogicJSONArray
-from . import LogicJSONString
-from . import LogicJSONNumber
-from . import LogicJSONBoolean
-from . import LogicJSONParser
-from . import LogicJSONNode, LogicJSONNodeType
+from .logic_json_node import LogicJSONNode, LogicJSONNodeType
 
 
 class LogicJSONObject(LogicJSONNode):
@@ -20,7 +15,7 @@ class LogicJSONObject(LogicJSONNode):
         except ValueError:
             return None
 
-    def get_json_boolean(self, key: str) -> LogicJSONBoolean:
+    def get_json_boolean(self, key: str):
         node = self.get(key)
         if node and node.get_type() == LogicJSONNodeType.BOOLEAN:
             return node
@@ -29,7 +24,7 @@ class LogicJSONObject(LogicJSONNode):
         )
         return None
 
-    def get_json_number(self, key: str) -> LogicJSONNumber:
+    def get_json_number(self, key: str):
         node = self.get(key)
         if node and node.get_type() == LogicJSONNodeType.NUMBER:
             return node
@@ -47,7 +42,7 @@ class LogicJSONObject(LogicJSONNode):
         )
         return None
 
-    def get_json_string(self, key: str) -> LogicJSONString:
+    def get_json_string(self, key: str):
         node = self.get(key)
         if node and node.get_type() == LogicJSONNodeType.STRING:
             return node
@@ -56,7 +51,8 @@ class LogicJSONObject(LogicJSONNode):
         )
         return None
 
-    def get_json_array(self, key: str) -> LogicJSONArray:
+    def get_json_array(self, key: str):
+        from .logic_json_array import LogicJSONArray
         node = self.get(key)
         if node and node.get_type() == LogicJSONNodeType.ARRAY:
             return node
@@ -95,6 +91,8 @@ class LogicJSONObject(LogicJSONNode):
         for i, key in enumerate(self.m_keys):
             if i > 0:
                 builder.append(",")
+                
+            from . import LogicJSONParser
             LogicJSONParser.write_string(key, builder)
             builder.append(":")
             self.m_values[i].write_to_string(builder)
