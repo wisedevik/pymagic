@@ -4,6 +4,11 @@ from logic.data.data_objects.logic_mission_data import LogicMissionData
 from logic.data.tables.logic_data_table import LogicDataTable
 from logic.data.tables.logic_data_tables import LogicDataTables
 from titan.datastream.checksum_encoder import ChecksumEncoder
+<<<<<<< Updated upstream
+=======
+from titan.debug.debugger import Debugger
+from logic.helper import ByteStreamHelper
+>>>>>>> Stashed changes
 from titan.math.logic_long import LogicLong
 
 
@@ -23,7 +28,20 @@ class LogicClientAvatar(LogicAvatar):
         avatar.free_diamonds = 500
 
         avatar.set_resource_count(LogicDataTables.get_gold_data(), 1000)
+<<<<<<< Updated upstream
         avatar.set_resource_count(LogicDataTables.get_elixir_data(), 900)
+=======
+        avatar.set_resource_count(LogicDataTables.get_elixir_data(), 1000)
+
+        table = LogicDataTables.get_table(LogicDataType.MISSION)
+
+        for i in range(table.get_item_count()):
+            missionData: LogicMissionData = cast(
+                LogicMissionData, LogicDataTables.get_data_by_id(21000000 + i)
+            )
+            if missionData:
+                avatar.set_mission_completed(missionData, True)
+>>>>>>> Stashed changes
 
         return avatar
 
@@ -67,10 +85,16 @@ class LogicClientAvatar(LogicAvatar):
         encoder.write_int(0)
         encoder.write_int(0)
 
+<<<<<<< Updated upstream
         listik = list(range(21000000, 21000013))
         encoder.write_int(len(listik)) # skip tutorial
         for item in listik:
             encoder.write_int(item)
+=======
+        encoder.write_int(self.mission_completed.count)  # skip tutorial
+        for item in self.mission_completed:
+            ByteStreamHelper.write_data_reference(encoder, item)
+>>>>>>> Stashed changes
 
         encoder.write_int(0)
         encoder.write_int(0)

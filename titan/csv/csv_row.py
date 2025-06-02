@@ -2,7 +2,6 @@ class CSVRow:
     def __init__(self, table) -> None:
         self._table = table
         self._row_offset = table.get_column_row_count()
-        table.add_row(self)
 
     def get_row_offset(self) -> int:
         return self._row_offset

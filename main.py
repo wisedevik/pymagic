@@ -1,4 +1,5 @@
 import asyncio
+from asyncio.tasks import Task
 
 from logic.avatar.logic_client_avatar import LogicClientAvatar
 from logic.data.tables.logic_data_tables import LogicDataTables
@@ -13,6 +14,9 @@ async def main():
     Debugger.set_listener(ServerDebugger("server_log.txt"))
 
     ResourceManager.load_game_resources()
+
+    table = LogicDataTables.get_table(LogicDataType.MISSION)
+    print(table.get_item_count())
 
     gateway = TCPGateway()
     await gateway.start()

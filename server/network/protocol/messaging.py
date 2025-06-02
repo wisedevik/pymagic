@@ -30,6 +30,7 @@ class Messaging:
                 buffer
             )
 
+<<<<<<< Updated upstream
             if length - HEADER_SIZE >= encrypted_length:
                 encrypted_bytes = bytearray(encrypted_length)
                 encoding_bytes = bytearray(encrypted_length)
@@ -53,26 +54,69 @@ class Messaging:
                 return encrypted_length + HEADER_SIZE
 
         return 0
+=======
+    async def _sending_loop(self):
+        while self._is_active:
+            try:
+                message = await self._outgoing_queue.get()
+                if not self._is_active:
+                    break
+
+                await self._send_message(message)
+                self._outgoing_queue.task_done()
+
+                await asyncio.sleep(0.001)
+
+            except asyncio.CancelledError:
+                break
+            except Exception as e:
+                Debugger.error(f"Sending loop error: {e}")
+                await asyncio.sleep(0.1)
+>>>>>>> Stashed changes
 
     async def send(self, message: PiranhaMessage):
         if not self._client_socket:
             Debugger.print("[Messaging] Socket not connected")
             return
+<<<<<<< Updated upstream
+=======
+
+        await self._outgoing_queue.put(message)
+>>>>>>> Stashed changes
 
         if message.get_encoding_length() == 0:
             message.encode()
 
+<<<<<<< Updated upstream
         encoding_length = message.get_encoding_length()
         encoding_bytes = message.get_message_bytes()
+=======
+            if message.get_encoding_length() == 0:
+                message.encode()
+
+            encoding_length = message.get_encoding_length()
+            encoding_bytes = message.get_message_bytes()
+            encrypted_bytes = self._send_encrypter.encrypt(encoding_bytes)
+            encrypted_length = len(encrypted_bytes)
+>>>>>>> Stashed changes
 
         encrypted_bytes = self._send_encrypter.encrypt(encoding_bytes)
 
+<<<<<<< Updated upstream
         stream = bytearray(encoding_length + HEADER_SIZE)
         Messaging.write_header(message, stream, encoding_length)
         stream[HEADER_SIZE:] = encrypted_bytes
 
         await self._send_all(stream)
         Debugger.warning(f"Sent message with type {message.get_message_type()} length={message.get_encoding_length()}")
+=======
+            try:
+                await self._send_all(stream)
+                Debugger.warning(f"Sent message with type {message.get_message_type()}")
+            except Exception as e:
+                Debugger.error(f"Send failed: {str(e)}")
+                self._is_active = False
+>>>>>>> Stashed changes
 
     async def _send_all(self, data: bytearray):
         total_sent = 0
@@ -93,6 +137,10 @@ class Messaging:
     def write_header(message: PiranhaMessage, stream: bytearray, length: int):
         message_type = message.get_message_type()
         message_version = message.get_message_version()
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         stream[0] = (message_type >> 8) & 0xFF
         stream[1] = message_type & 0xFF
         stream[2] = (length >> 16) & 0xFF

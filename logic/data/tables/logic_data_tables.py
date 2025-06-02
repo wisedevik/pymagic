@@ -64,7 +64,15 @@ class LogicDataTables:
     @staticmethod
     def get_data_by_id(global_id: int) -> Optional[LogicData]:
         table_index = GlobalID.get_class_id(global_id) - 1
+<<<<<<< Updated upstream
         if 0 <= table_index < TABLE_COUNT:
+=======
+        if (
+            table_index >= 0
+            and table_index < TABLE_COUNT
+            and LogicDataTables._tables[table_index] != None
+        ):
+>>>>>>> Stashed changes
             table = LogicDataTables._tables[table_index]
             if table:
                 return table.get_item_by_id(global_id)

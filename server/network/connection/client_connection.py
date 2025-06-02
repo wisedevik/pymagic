@@ -26,7 +26,23 @@ class ClientConnection:
             self._receive_buffer[recv_idx : recv_idx + len(data)] = data
             recv_idx += len(data)
 
+<<<<<<< Updated upstream
             await self._messaging.on_receive(self._receive_buffer, recv_idx)
+=======
+            offset = 0
+            while True:
+                consumed = await self._messaging.on_receive(
+                    buffer[offset:], recv_idx - offset
+                )
+                if consumed == 0:
+                    break
+                offset += consumed
+
+            if offset > 0:
+                buffer[: recv_idx - offset] = buffer[offset:recv_idx]
+                recv_idx -= offset
+                offset = 0
+>>>>>>> Stashed changes
 
     async def send_message(self, message: PiranhaMessage):
         await self._messaging.send(message)
