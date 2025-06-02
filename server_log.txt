@@ -403,3 +403,19 @@ Press Ctrl+C to stop it
 [WARNING] (2025-06-02 09:59:55) Unhandled message type: 14102
 [WARNING] (2025-06-02 09:59:56) Unhandled message type: 14102
 [WARNING] (2025-06-02 09:59:57) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-06-02 10:00:26) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-02 10:00:27) [TCPGateway.start] Server is listeting on ('0.0.0.0', 9339))
+Press Ctrl+C to stop it
+[INFO] (2025-06-02 10:00:29) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 43986)
+[INFO] (2025-06-02 10:00:29) [MessageManager.receive_message] message_type=10101
+[INFO] (2025-06-02 10:00:29) Tryna log in id=LogicLong(0-32) token=e4ce2aab82dc0de94e76caa4b7b32466 v=5.2.0
+[INFO] (2025-06-02 10:00:29) s_v: 5.2.0
+[WARNING] (2025-06-02 10:00:29) Sent message 20104
+[WARNING] (2025-06-02 10:00:29) Sent message 24101
+[WARNING] (2025-06-02 10:00:35) Unhandled message type: 14102
+[WARNING] (2025-06-02 10:00:36) Unhandled message type: 14102
+[WARNING] (2025-06-02 10:00:37) Unhandled message type: 14102
+[WARNING] (2025-06-02 10:00:38) Unhandled message type: 14102
+[WARNING] (2025-06-02 10:00:39) Unhandled message type: 14102
+[WARNING] (2025-06-02 10:00:40) [ClientConnectionManager.run_session_async] User has disconnected
+[INFO] (2025-06-02 10:00:42) [TCPGateway.stop] Server stopped

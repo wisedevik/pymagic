@@ -16,9 +16,6 @@ async def main():
 
     ResourceManager.load_game_resources()
 
-    table = LogicDataTables.get_table(LogicDataType.MISSION)
-    print(table.get_item_count())
-
     gateway = TCPGateway()
     await gateway.start()
 

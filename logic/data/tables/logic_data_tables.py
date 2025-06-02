@@ -8,6 +8,8 @@ from logic.data.tables.logic_data_table import LogicDataTable
 from logic.data.core.logic_data_type import LogicDataType
 from titan.csv.csv_node import CSVNode
 from logic.data.data_objects.logic_resource_data import LogicResourceData
+from logic.data.data_objects.logic_global_data import LogicGlobalData
+from logic.data.data_objects.logic_globals import LogicGlobals
 from typing import cast
 
 
@@ -32,7 +34,7 @@ class LogicDataTables:
             table.set_table(table_data)
         else:
             if index == LogicDataType.GLOBAL:
-                pass
+                LogicDataTables._tables[index] = LogicGlobals(table_data, index)
             else:
                 LogicDataTables._tables[index] = LogicDataTable(table_data, index)
 
@@ -94,6 +96,10 @@ class LogicDataTables:
         return table.get_data_by_name(name, caller)
 
     @staticmethod
+    def get_globals() -> LogicGlobals:
+        return LogicDataTables._tables[LogicDataType.GLOBAL]
+
+    @staticmethod
     def get_resource_by_name(
         name: str, caller: Optional[LogicData]
     ) -> LogicResourceData:
@@ -120,3 +126,12 @@ class LogicDataTables:
         if table:
             return cast(LogicBuildingClassData, table.get_data_by_name(name, caller))
         return None
+
+    @staticmethod
+    def get_global_by_name(
+        name: str, caller: Optional[LogicData]
+    ) -> LogicGlobalData:
+        table = LogicDataTables._tables[LogicDataType.GLOBAL]
+        assert isinstance(table, LogicDataTable)
+
+        return cast(LogicGlobalData, table.get_data_by_name(name, caller))
