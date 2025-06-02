@@ -125,3 +125,244 @@
 [WARNING] (2025-06-02 14:29:04) [ClientConnectionManager.on_connect] User has disconnected
 [INFO] (2025-06-02 14:32:20) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
 [INFO] (2025-06-02 14:32:21) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-02 15:30:22) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:30:28) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 47858)
+[INFO] (2025-06-02 15:30:28) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:30:28) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:30:28) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:30:28) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:30:28) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:30:28) [Messaging.send] Sent message 24101
+[INFO] (2025-06-02 15:30:34) [MessageManager.receive_message] Received message of type: 14102
+[ERROR] (2025-06-02 15:30:34) [ClientConnection.receive] Unhandled exception in session: 'NoneType' object has no attribute 'count'
+[WARNING] (2025-06-02 15:30:34) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:31:19) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-02 15:31:20) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:31:22) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 49626)
+[INFO] (2025-06-02 15:31:22) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:31:22) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:31:22) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:31:22) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:31:22) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:31:22) [Messaging.send] Sent message 24101
+[INFO] (2025-06-02 15:31:28) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:31:29) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:31:30) [MessageManager.receive_message] Received message of type: 14102
+[WARNING] (2025-06-02 15:31:31) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:31:36) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 46084)
+[INFO] (2025-06-02 15:31:36) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:31:36) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:31:36) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:31:36) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:31:36) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:31:36) [Messaging.send] Sent message 24101
+[INFO] (2025-06-02 15:31:41) [MessageManager.receive_message] Received message of type: 14102
+[ERROR] (2025-06-02 15:31:43) [ClientConnection.receive] Unhandled exception in session: cannot access local variable 'class_name' where it is not associated with a value
+[WARNING] (2025-06-02 15:31:43) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:32:46) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:32:47) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 39894)
+[INFO] (2025-06-02 15:32:47) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:32:47) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:32:47) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:32:47) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:32:47) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:32:47) [Messaging.send] Sent message 24101
+[INFO] (2025-06-02 15:32:51) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:32:52) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:32:53) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:32:54) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:32:55) [MessageManager.receive_message] Received message of type: 14102
+[ERROR] (2025-06-02 15:32:56) [ClientConnection.receive] Unhandled exception in session: cannot access local variable 'class_name' where it is not associated with a value
+[WARNING] (2025-06-02 15:32:56) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:34:50) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-02 15:34:50) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:34:51) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 42382)
+[INFO] (2025-06-02 15:34:52) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:34:52) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:34:52) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:34:52) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:34:52) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:34:52) [Messaging.send] Sent message 24101
+[INFO] (2025-06-02 15:34:57) [MessageManager.receive_message] Received message of type: 14102
+[WARNING] (2025-06-02 15:34:58) [decode_command] command 539 is NONE!
+[INFO] (2025-06-02 15:34:58) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:34:59) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:35:00) [MessageManager.receive_message] Received message of type: 14102
+[WARNING] (2025-06-02 15:35:01) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:36:48) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:36:53) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 46352)
+[INFO] (2025-06-02 15:36:53) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:36:53) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:36:53) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:36:53) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:36:53) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:36:53) [Messaging.send] Sent message 24101
+[WARNING] (2025-06-02 15:36:59) [ServerDebuggerdecode_command] command 539 is NONE!
+[INFO] (2025-06-02 15:36:59) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:37:00) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:37:01) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:37:02) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:37:03) [MessageManager.receive_message] Received message of type: 14102
+[WARNING] (2025-06-02 15:37:04) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:38:15) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:38:17) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 45140)
+[INFO] (2025-06-02 15:38:17) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:38:17) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:38:17) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:38:17) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:38:17) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:38:17) [Messaging.send] Sent message 24101
+[INFO] (2025-06-02 15:38:22) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:38:23) [MessageManager.receive_message] Received message of type: 14102
+[WARNING] (2025-06-02 15:38:24) [ServerDebuggerdecode_command] command 539 is NONE!
+[INFO] (2025-06-02 15:38:24) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:38:25) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:38:26) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:38:27) [MessageManager.receive_message] Received message of type: 14102
+[WARNING] (2025-06-02 15:38:29) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:38:58) [ServerDebugger.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:38:59) [ServerDebugger.on_connect] New connection from ('192.168.0.106', 49354)
+[INFO] (2025-06-02 15:38:59) [ServerDebugger.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:38:59) [ServerDebugger.on_login_message] Received new login
+[WARNING] (2025-06-02 15:38:59) [ServerDebugger.send] Sent message 20104
+[INFO] (2025-06-02 15:38:59) [ServerDebugger.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:38:59) [ServerDebugger.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:38:59) [ServerDebugger.send] Sent message 24101
+[INFO] (2025-06-02 15:39:05) [ServerDebugger.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:39:06) [ServerDebugger.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:39:07) [ServerDebugger.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:39:08) [ServerDebugger.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:39:09) [ServerDebugger.receive_message] Received message of type: 14102
+[WARNING] (2025-06-02 15:39:10) [ServerDebugger.on_connect] User has disconnected
+[INFO] (2025-06-02 15:40:33) [Debugger.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:40:35) [Debugger.on_connect] New connection from ('192.168.0.106', 42528)
+[INFO] (2025-06-02 15:40:35) [Debugger.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:40:35) [Debugger.on_login_message] Received new login
+[WARNING] (2025-06-02 15:40:35) [Debugger.send] Sent message 20104
+[INFO] (2025-06-02 15:40:35) [Debugger.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:40:35) [Debugger.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:40:35) [Debugger.send] Sent message 24101
+[INFO] (2025-06-02 15:40:41) [Debugger.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:40:42) [Debugger.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:40:43) [Debugger.receive_message] Received message of type: 14102
+[WARNING] (2025-06-02 15:40:43) [Debugger.on_connect] User has disconnected
+[INFO] (2025-06-02 15:40:59) [Debugger.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:41:00) [Debugger.stop] Server stopped
+[INFO] (2025-06-02 15:42:04) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:42:05) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 48230)
+[INFO] (2025-06-02 15:42:05) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:42:05) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:42:05) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:42:05) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:42:05) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:42:05) [Messaging.send] Sent message 24101
+[WARNING] (2025-06-02 15:42:11) [EndClientTurnMessage.decode_command] command 539 is NONE!
+[INFO] (2025-06-02 15:42:11) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:42:12) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:42:13) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:42:14) [MessageManager.receive_message] Received message of type: 14102
+[WARNING] (2025-06-02 15:42:15) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:43:13) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:43:14) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 40576)
+[INFO] (2025-06-02 15:43:14) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:43:14) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:43:14) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:43:14) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:43:14) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:43:15) [Messaging.send] Sent message 24101
+[INFO] (2025-06-02 15:43:20) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:21) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:22) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:23) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:24) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:25) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:26) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:27) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:28) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:29) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:30) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:31) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:32) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:33) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:34) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:35) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:36) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:37) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:38) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-02 15:43:39) [MessageManager.receive_message] Received message of type: 14102
+[WARNING] (2025-06-02 15:43:40) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:44:02) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:44:05) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 47990)
+[INFO] (2025-06-02 15:44:05) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:44:05) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:44:05) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:44:05) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:44:05) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:44:05) [Messaging.send] Sent message 24101
+[WARNING] (2025-06-02 15:44:13) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:47:44) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:47:45) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 45292)
+[INFO] (2025-06-02 15:47:45) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:47:45) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:47:45) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:47:45) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:47:45) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:47:45) [Messaging.send] Sent message 24101
+[WARNING] (2025-06-02 15:47:58) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:49:00) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:49:03) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 48326)
+[INFO] (2025-06-02 15:49:03) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:49:03) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:49:03) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:49:03) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:49:03) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:49:03) [Messaging.send] Sent message 24101
+[ERROR] (2025-06-02 15:49:09) [ClientConnection.receive] Unhandled exception in session: 'NoneType' object has no attribute 'add'
+[WARNING] (2025-06-02 15:49:09) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:50:12) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-02 15:50:13) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:50:14) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 48888)
+[INFO] (2025-06-02 15:50:14) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:50:14) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:50:14) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:50:14) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:50:14) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:50:14) [Messaging.send] Sent message 24101
+[WARNING] (2025-06-02 15:50:22) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:50:43) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:50:43) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 37548)
+[INFO] (2025-06-02 15:50:43) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:50:43) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:50:43) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:50:43) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:50:43) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:50:43) [Messaging.send] Sent message 24101
+[ERROR] (2025-06-02 15:50:49) [ClientConnection.receive] Unhandled exception in session: 'NoneType' object has no attribute 'add'
+[WARNING] (2025-06-02 15:50:49) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:51:04) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-02 15:51:05) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:51:06) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 49882)
+[INFO] (2025-06-02 15:51:06) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:51:06) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:51:06) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:51:06) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:51:06) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:51:06) [Messaging.send] Sent message 24101
+[WARNING] (2025-06-02 15:51:31) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:51:53) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 48834)
+[INFO] (2025-06-02 15:51:53) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:51:53) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:51:53) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:51:53) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:51:53) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:51:53) [Messaging.send] Sent message 24101
+[WARNING] (2025-06-02 15:51:54) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-02 15:51:56) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-02 15:51:59) [ClientConnectionManager.on_connect] New connection from ('192.168.0.106', 48840)
+[INFO] (2025-06-02 15:51:59) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-02 15:51:59) [MessageManager.on_login_message] Received new login
+[WARNING] (2025-06-02 15:51:59) [Messaging.send] Sent message 20104
+[INFO] (2025-06-02 15:51:59) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-02 15:51:59) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-02 15:51:59) [Messaging.send] Sent message 24101
+[WARNING] (2025-06-02 15:52:11) [ClientConnectionManager.on_connect] User has disconnected

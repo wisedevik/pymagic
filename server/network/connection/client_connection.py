@@ -1,5 +1,6 @@
 import asyncio
 
+from server.mode.game_mode import GameMode
 from server.network.protocol import MessageManager
 from server.network.protocol import Messaging
 from titan.debug.debugger import Debugger
@@ -14,6 +15,10 @@ class ClientConnection:
         self._writer = writer
         self._messaging = Messaging(reader, writer, MessageManager(self))
         self._buffer = bytearray(8192)
+        self.game_mode = GameMode()
+
+    def get_game_mode(self) -> GameMode:
+        return self.game_mode
 
     async def receive(self):
         try:
