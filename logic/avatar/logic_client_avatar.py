@@ -24,8 +24,12 @@ class LogicClientAvatar(LogicAvatar):
         avatar.diamonds = globals.get_starting_diamonds()
         avatar.free_diamonds = globals.get_starting_diamonds()
 
-        avatar.set_resource_count(LogicDataTables.get_gold_data(), globals.get_starting_gold())
-        avatar.set_resource_count(LogicDataTables.get_elixir_data(), globals.get_starting_elixir())
+        avatar.set_resource_count(
+            LogicDataTables.get_gold_data(), globals.get_starting_gold()
+        )
+        avatar.set_resource_count(
+            LogicDataTables.get_elixir_data(), globals.get_starting_elixir()
+        )
 
         table = LogicDataTables.get_table(LogicDataType.MISSION)
 

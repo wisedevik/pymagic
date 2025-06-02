@@ -23,10 +23,10 @@ class LogicGlobals(LogicDataTable):
 
     def get_starting_gold(self):
         return self.starting_gold
-    
+
     def get_starting_diamonds(self):
         return self.starting_diamonds
-    
+
     def get_starting_elixir(self):
         return self.starting_elixir
 
