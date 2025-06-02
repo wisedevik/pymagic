@@ -1,4 +1,3 @@
-from logging import FATAL
 from typing import Optional
 from logic.avatar.logic_avatar_change_listener import LogicAvatarChangeListener
 from logic.data.core.logic_data import LogicData
@@ -75,6 +74,9 @@ class LogicAvatar(LogicBase):
         if idx != -1:
             self.resource_count[idx].set_count(cnt)
         else:
+            Debugger.print(
+                f"Added resource {resource_data.get_name()} ({resource_data.get_global_id()})"
+            )
             self.resource_count.add(LogicDataSlot(resource_data, cnt))
 
     def set_mission_completed(self, data: LogicMissionData, state: bool):

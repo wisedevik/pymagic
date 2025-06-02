@@ -1,4 +1,3 @@
-from typing import Any
 from logic.data.core.logic_data import LogicData
 from logic.helper import ByteStreamHelper
 from titan.datastream.byte_stream import ByteStream

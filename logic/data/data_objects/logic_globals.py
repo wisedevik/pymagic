@@ -1,6 +1,7 @@
 from logic.data.tables import LogicDataTable
 from logic.data.data_objects.logic_global_data import LogicGlobalData
 
+
 class LogicGlobals(LogicDataTable):
     def __init__(self, table, index):
         super().__init__(table, index)
@@ -17,8 +18,9 @@ class LogicGlobals(LogicDataTable):
 
     def get_global_data(self, name) -> LogicGlobalData:
         from logic.data.tables import LogicDataTables
+
         return LogicDataTables.get_global_by_name(name)
-    
+
     def get_bool_value(self, name):
         self.get_global_data(name).get_boolean_value()
 

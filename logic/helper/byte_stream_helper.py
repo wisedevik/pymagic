@@ -1,4 +1,3 @@
-from ast import Not
 from logic.data.core.logic_data import LogicData
 from logic.data.tables.logic_data_tables import LogicDataTables
 from titan.datastream.byte_stream import ByteStream

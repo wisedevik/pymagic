@@ -15,9 +15,7 @@ class MessageManager:
         self.connection = connection
 
     async def receive_message(self, message: PiranhaMessage):
-        Debugger.print(
-            f"[MessageManager.receive_message] message_type={message.get_message_type()}"
-        )
+        Debugger.print(f"Received message of type: {message.get_message_type()}")
 
         match message.get_message_type():
             case 10101:
@@ -26,9 +24,7 @@ class MessageManager:
                 ...
 
     async def on_login_message(self, message: LoginMessage):
-        Debugger.print(
-            f"Tryna log in id={message._account_id} token={message.pass_token} v={message.get_version()}"
-        )
+        Debugger.print(f"Received new login")
 
         login_ok = LoginOkMessage()
         login_ok.account_id = LogicLong(0, 32)
@@ -38,10 +34,6 @@ class MessageManager:
         login_ok.major_version = LogicVersion.major_version
         login_ok.build = LogicVersion.build
         login_ok.minor_version = LogicVersion.content_version
-
-        Debugger.print(
-            f"s_v: {LogicVersion.major_version}.{LogicVersion.build}.{LogicVersion.content_version}"
-        )
 
         await self.connection.send_message(login_ok)
         await self.connection.send_message(OwnHomeDataMessage())

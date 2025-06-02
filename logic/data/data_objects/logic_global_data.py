@@ -28,16 +28,15 @@ class LogicGlobalData(LogicData):
 
     def get_number_value(self):
         return self.number_value
-    
+
     def get_boolean_value(self):
         return self.boolean_value
 
     def get_text_value(self):
         return self.text_value
-    
+
     def get_number_array_value(self, index):
         return self.number_array[index]
-    
+
     def get_text_array_value(self, index):
         return self.string_array[index]
-    

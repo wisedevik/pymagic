@@ -1,5 +1,4 @@
 from logic.time import LogicTime
-from titan.math import LogicMath
 
 
 class LogicTimer:

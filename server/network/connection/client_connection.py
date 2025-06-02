@@ -1,43 +1,50 @@
-import socket
 import asyncio
 
-from server.network.protocol.message_manager import MessageManager
-from server.network.protocol.messaging import Messaging
+from server.network.protocol import MessageManager
+from server.network.protocol import Messaging
 from titan.debug.debugger import Debugger
 from titan.message.piranha_message import PiranhaMessage
 
 
 class ClientConnection:
-    def __init__(self, socket: socket.socket) -> None:
-        self._client_socket = socket
-        self._messaging = Messaging(self._client_socket, MessageManager(self))
-
-        self._receive_buffer = bytearray(8192)
+    def __init__(
+        self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter
+    ) -> None:
+        self._reader = reader
+        self._writer = writer
+        self._messaging = Messaging(reader, writer, MessageManager(self))
+        self._buffer = bytearray(8192)
 
     async def receive(self):
-        loop = asyncio.get_running_loop()
-        recv_idx = 0
-        buffer = bytearray(8192)
-
-        while True:
-            data = await loop.sock_recv(self._client_socket, 4096)
-            if not data:
-                break
-
-            buffer[recv_idx : recv_idx + len(data)] = data
-            recv_idx += len(data)
-
+        try:
             offset = 0
             while True:
-                consumed = await self._messaging.on_receive(buffer[offset:], recv_idx - offset)
-                if consumed == 0:
+                data = await self._reader.read(4096)
+                if not data:
                     break
-                offset += consumed
 
-            if offset > 0:
-                buffer[: recv_idx - offset] = buffer[offset:recv_idx]
-                recv_idx -= offset
-                offset = 0
+                self._buffer[offset : offset + len(data)] = data
+                offset += len(data)
+
+                processed_offset = 0
+                while True:
+                    consumed = await self._messaging.on_receive(
+                        self._buffer[processed_offset:offset], offset - processed_offset
+                    )
+                    if consumed == 0:
+                        break
+                    processed_offset += consumed
+
+                if processed_offset > 0:
+                    self._buffer[: offset - processed_offset] = self._buffer[
+                        processed_offset:offset
+                    ]
+                    offset -= processed_offset
+
+        except asyncio.CancelledError:
+            pass
+        except Exception as ex:
+            Debugger.error(f"Unhandled exception in session: {ex}")
 
     async def send_message(self, message: PiranhaMessage):
         await self._messaging.send(message)

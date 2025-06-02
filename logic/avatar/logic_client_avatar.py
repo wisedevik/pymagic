@@ -1,11 +1,9 @@
 from typing import cast
 from logic.avatar.logic_avatar import LogicAvatar
 from logic.data.data_objects.logic_mission_data import LogicMissionData
-from logic.data.tables.logic_data_table import LogicDataTable
 from logic.data.tables.logic_data_tables import LogicDataTables
+from logic.helper.byte_stream_helper import ByteStreamHelper
 from titan.datastream.checksum_encoder import ChecksumEncoder
-from titan.debug.debugger import Debugger
-from logic.helper import ByteStreamHelper
 from titan.math.logic_long import LogicLong
 from logic.data.core.logic_data_type import LogicDataType
 
@@ -22,8 +20,8 @@ class LogicClientAvatar(LogicAvatar):
         avatar = LogicClientAvatar()
 
         # TODO: Replace hardcode to LogicGlobals data
-        avatar.diamonds = 500
-        avatar.free_diamonds = 500
+        avatar.diamonds = 5000
+        avatar.free_diamonds = 5000
 
         avatar.set_resource_count(LogicDataTables.get_gold_data(), 1000)
         avatar.set_resource_count(LogicDataTables.get_elixir_data(), 1000)
@@ -52,11 +50,11 @@ class LogicClientAvatar(LogicAvatar):
         encoder.write_int(0)
         encoder.write_int(0)
         encoder.write_int(0)
-        encoder.write_string("MagicPy") # Name
+        encoder.write_string("MagicPy")  # Name
         encoder.write_string("")
         encoder.write_int(1)
         encoder.write_int(0)
-        encoder.write_int(self.diamonds) # Diamonds
+        encoder.write_int(self.diamonds)  # Diamonds
         encoder.write_int(self.free_diamonds)
         encoder.write_int(0)
         encoder.write_int(0)

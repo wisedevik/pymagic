@@ -11,7 +11,6 @@ class PiranhaMessageMeta(type):
             instance = cls()
             if instance.is_client_to_server_message():
                 message_registry[instance.get_message_type()] = cls
-                print(message_registry)
 
 
 class PiranhaMessage(metaclass=PiranhaMessageMeta):

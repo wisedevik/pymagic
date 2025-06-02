@@ -1,4 +1,3 @@
-from titan.debug.debugger import Debugger
 from titan.message.piranha_message import PiranhaMessage
 from titan.math.logic_long import LogicLong
 

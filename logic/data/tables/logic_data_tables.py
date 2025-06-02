@@ -128,9 +128,7 @@ class LogicDataTables:
         return None
 
     @staticmethod
-    def get_global_by_name(
-        name: str, caller: Optional[LogicData]
-    ) -> LogicGlobalData:
+    def get_global_by_name(name: str, caller: Optional[LogicData]) -> LogicGlobalData:
         table = LogicDataTables._tables[LogicDataType.GLOBAL]
         assert isinstance(table, LogicDataTable)
 
