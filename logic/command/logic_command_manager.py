@@ -51,9 +51,10 @@ class LogicCommandManager:
                 if command.get_execute_sub_tick() == sub_tick:
                     if self.is_command_allowed_in_current_state(command):
                         if command.execute(self.level) == 0:
+                            Debugger.print(f"Command with type {command.get_command_type()} has been executed")
                             ... # listener.command_executed(command);
 
-                        self.commands.remove(command)
+                        self.commands.remove(self.commands.index_of(command))
                     else:
                         Debugger.warning(f"Execute command failed! Command not allowed in current state. (type={command.get_command_type()} current_state={self.level.get_state()}")
 
