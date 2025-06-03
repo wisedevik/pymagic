@@ -1,3 +1,5 @@
+from typing import cast
+from logic.data.string.logic_string_table import LogicStringTable
 from logic.data.tables.logic_data_table_resource import LogicDataTableResource
 from logic.data.tables.logic_data_tables import TABLE_COUNT, LogicDataTables
 from logic.data.core.logic_data_type import LogicDataType
@@ -39,6 +41,13 @@ class LogicResources:
                 "server/assets/csv_logic/globals.csv", LogicDataType.GLOBAL, 0
             )
         )
+
+        array_list.add(
+            LogicDataTableResource("" \
+                "server/assets/csv_logic/texts.csv", cast(LogicDataType, 0), 3
+            )
+        )
+
         return array_list
 
     @staticmethod
@@ -50,6 +59,8 @@ class LogicResources:
         match resource.get_type():
             case 0:
                 LogicDataTables.init_data_table(node, resource.get_table_index())
+            case 3:
+                LogicStringTable.create_instance(node.get_table())
             case _:
                 Debugger.error("LogicResources.Invalid resource type")
 
