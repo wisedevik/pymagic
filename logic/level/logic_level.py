@@ -17,10 +17,10 @@ class LogicLevel:
 
     def get_state(self):
         return self.game_mode.state
-    
+
     def get_logic_time(self) -> LogicTime:
         return self.logic_time
-    
+
     def is_in_combat_state(self):
         state = self.get_state()
         return state == 2 or state == 3 or state == 5
@@ -31,8 +31,6 @@ class LogicLevel:
     def get_battle_end_pending(self):
         return self.battle_end_pending
 
-    def sub_tick(self):
-        ...
+    def sub_tick(self): ...
 
-    def tick(self):
-        ...
+    def tick(self): ...

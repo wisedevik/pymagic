@@ -1,4 +1,3 @@
-from logging import warning
 from typing import Optional
 from titan.datastream.byte_stream import ByteStream
 from titan.datastream.checksum_encoder import ChecksumEncoder
@@ -11,7 +10,9 @@ class LogicCommandManager:
         from logic.command.logic_command import LogicCommand
 
         self.level = level
-        self.commands: Optional[LogicArrayList[LogicCommand]] = LogicArrayList[LogicCommand]()
+        self.commands: Optional[LogicArrayList[LogicCommand]] = LogicArrayList[
+            LogicCommand
+        ]()
 
     def add_command(self, command):
         if command:
@@ -26,53 +27,58 @@ class LogicCommandManager:
         state = self.level.get_state()
 
         if state == 4:
-            Debugger.warning("Execute command failed! Commands are not allowed in visit state.")
+            Debugger.warning(
+                "Execute command failed! Commands are not allowed in visit state."
+            )
             return False
-        
+
         if command_type <= 1000:
             if command_type >= 500 and command_type < 600 and state != 1:
-                Debugger.warning("Execute command failed! Command is only allowed in home state")
+                Debugger.warning(
+                    "Execute command failed! Command is only allowed in home state"
+                )
                 return False
             if command_type >= 600 and command_type < 700 & state != 2 and state != 5:
-                Debugger.warning("Execute command failed! Command is only allowed in attack state")
+                Debugger.warning(
+                    "Execute command failed! Command is only allowed in attack state"
+                )
                 return False
-            
+
         return True
-    
+
     def sub_tick(self):
         sub_tick = self.level.get_logic_time().get_tick()
-        if self.commands is not None: 
+        if self.commands is not None:
             for i in range(self.commands.count):
                 command = self.commands[i]
                 if command.get_execute_sub_tick() < sub_tick:
-                    Debugger.error(f"Execute command failed! Command should have been executed already. " +
-                                    f"(type={command.get_command_type()} server_tick={sub_tick} command_tick={command.get_execute_sub_tick()})")
-                
+                    Debugger.error(
+                        f"Execute command failed! Command should have been executed already. "
+                        + f"(type={command.get_command_type()} server_tick={sub_tick} command_tick={command.get_execute_sub_tick()})"
+                    )
+
                 if command.get_execute_sub_tick() == sub_tick:
                     if self.is_command_allowed_in_current_state(command):
                         if command.execute(self.level) == 0:
-                            Debugger.print(f"Command with type {command.get_command_type()} has been executed")
-                            ... # listener.command_executed(command);
+                            ...  # listener.command_executed(command);
 
-                        self.commands.remove(self.commands.index_of(command))
+                        self.commands.remove(command)
                     else:
-                        Debugger.warning(f"Execute command failed! Command not allowed in current state. (type={command.get_command_type()} current_state={self.level.get_state()}")
+                        Debugger.warning(
+                            f"Execute command failed! Command not allowed in current state. (type={command.get_command_type()} current_state={self.level.get_state()}"
+                        )
 
     @staticmethod
-    def create_command(type):
-        command = None
+    def create_command(command_type):
+        from logic.command.logic_command import commands_registry
 
-        if (type < 500):
-            match type:
-                case _:
-                    Debugger.warning(f"LogicCommandManager.create_command() - Unknown command type {type}")
+        command = commands_registry.get(command_type)
+
+        if command:
+            return command
         else:
-            match type:
-                case 539:
-                    from logic.command.home.logic_news_seen_command import LogicNewsSeenCommand
-                    command = LogicNewsSeenCommand()
-        return command
-    
+            Debugger.warning(f"Unknown command type: {command_type}")
+
     @staticmethod
     def encode_command(encoder: ChecksumEncoder, command) -> None:
         encoder.write_int(command.get_command_type())
@@ -84,7 +90,9 @@ class LogicCommandManager:
         command = LogicCommandManager.create_command(cmd_type)
 
         if command is None:
-            print(f"[LogicCommandManager.decode_command] - command {cmd_type} is NONE!") # temporarily until the debugger is fixed
+            Debugger.warning(
+                f"Command {cmd_type} is NONE!"
+            )  # temporarily until the debugger is fixed
         else:
             command.decode(stream)
 

@@ -33,13 +33,12 @@ class LogicStringTable:
     @staticmethod
     def get_instance():
         return LogicStringTable.s_instance
-    
+
     def get_string(self, tid, column_index):
         row = self.strings.get(tid)
         if row is None:
             Debugger.warning(f"Can't find TID: {tid}")
             return None
-        
+
         value_at = row.get_value_at(column_index, 0)
         return value_at
-    

@@ -7,10 +7,15 @@ class GameMode:
     def __init__(self) -> None:
         self.logic_game_mode = LogicGameMode()
 
-    def on_client_turn_received(self, sub_tick: int, checksum: int, commands: LogicArrayList[LogicCommand]):
-        if self.logic_game_mode.get_state() == 4 or self.logic_game_mode.get_state() == 5:
+    def on_client_turn_received(
+        self, sub_tick: int, checksum: int, commands: LogicArrayList[LogicCommand]
+    ):
+        if (
+            self.logic_game_mode.get_state() == 4
+            or self.logic_game_mode.get_state() == 5
+        ):
             return
-        
+
         if commands:
             for i in range(commands.count):
                 self.logic_game_mode.get_command_manager().add_command(commands[i])

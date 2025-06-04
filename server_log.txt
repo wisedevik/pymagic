@@ -1,9 +1,0 @@
-[INFO] (2025-06-04 12:03:08) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
-[INFO] (2025-06-04 12:03:17) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 58676)
-[INFO] (2025-06-04 12:03:17) [MessageManager.receive_message] Received message of type: 10101
-[INFO] (2025-06-04 12:03:17) [MessageManager.on_login_message] Received new login
-[WARNING] (2025-06-04 12:03:17) [Messaging.send] Sent message 20104
-[INFO] (2025-06-04 12:03:17) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
-[INFO] (2025-06-04 12:03:17) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
-[WARNING] (2025-06-04 12:03:17) [Messaging.send] Sent message 24101
-[WARNING] (2025-06-04 12:03:26) [ClientConnectionManager.on_connect] User has disconnected

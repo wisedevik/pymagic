@@ -17,13 +17,16 @@ class MessageManager:
         self.connection = connection
 
     async def receive_message(self, message: PiranhaMessage):
-        if message.get_message_type() != 14102: Debugger.print(f"Received message of type: {message.get_message_type()}")
+        if message.get_message_type() != 14102:
+            Debugger.print(f"Received message of type: {message.get_message_type()}")
 
         match message.get_message_type():
             case 10101:
                 await self.on_login_message(cast(LoginMessage, message))
             case 14102:
-                await self.on_end_client_turn_message(cast(EndClientTurnMessage, message))
+                await self.on_end_client_turn_message(
+                    cast(EndClientTurnMessage, message)
+                )
             case _:
                 ...
 
@@ -31,7 +34,9 @@ class MessageManager:
         game_mode: GameMode = self.connection.get_game_mode()
 
         if game_mode:
-            game_mode.on_client_turn_received(message.sub_tick, message.checksum, message.commands)
+            game_mode.on_client_turn_received(
+                message.sub_tick, message.checksum, message.commands
+            )
 
     async def on_login_message(self, message: LoginMessage):
         Debugger.print(f"Received new login")

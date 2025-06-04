@@ -1,4 +1,14 @@
-__all__ = ["LogicJSONNumber", "LogicJSONObject", "LogicJSONString", "LogicJSONNode", "LogicJSONNodeType", "LogicJSONBoolean", "LogicJSONArray", "LogicJSONParser", "LogicJSONNull"]
+__all__ = [
+    "LogicJSONNumber",
+    "LogicJSONObject",
+    "LogicJSONString",
+    "LogicJSONNode",
+    "LogicJSONNodeType",
+    "LogicJSONBoolean",
+    "LogicJSONArray",
+    "LogicJSONParser",
+    "LogicJSONNull",
+]
 
 from .logic_json_number import LogicJSONNumber
 from .logic_json_object import LogicJSONObject

@@ -7,6 +7,7 @@ from titan.util.logic_array_list import LogicArrayList
 
 MESSAGE_TYPE = 14102
 
+
 class EndClientTurnMessage(PiranhaMessage):
     def __init__(self) -> None:
         super().__init__()
@@ -29,11 +30,13 @@ class EndClientTurnMessage(PiranhaMessage):
                     command = LogicCommandManager.decode_command(self.stream)
                     if command is None:
                         break
-                    
+
                     self.commands.add(command)
                     cnt -= 1
         else:
-            Debugger.warning(f"EndClientTurn.decode() command count is too high! ({cnt})")
+            Debugger.warning(
+                f"EndClientTurn.decode() command count is too high! ({cnt})"
+            )
 
     def get_message_type(self) -> int:
         return MESSAGE_TYPE

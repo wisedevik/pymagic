@@ -43,8 +43,8 @@ class LogicResources:
         )
 
         array_list.add(
-            LogicDataTableResource("" \
-                "server/assets/csv_logic/texts.csv", cast(LogicDataType, 0), 3
+            LogicDataTableResource(
+                "" "server/assets/csv_logic/texts.csv", cast(LogicDataType, 0), 3
             )
         )
 

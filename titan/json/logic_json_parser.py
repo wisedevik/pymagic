@@ -1,7 +1,6 @@
 from typing import List
 
 
-
 class LogicJSONParser:
     @staticmethod
     def create_json_string(root, ensure_capacity: int = 20) -> str:
@@ -83,6 +82,7 @@ class LogicJSONParser:
             return None
 
         from .logic_json_array import LogicJSONArray
+
         json_array = LogicJSONArray()
         stream.skip_whitespace()
         next_char = stream.next_char()
@@ -228,6 +228,7 @@ class LogicJSONParser:
         if next_char == "n":
             if stream.read() == "u" and stream.read() == "l" and stream.read() == "l":
                 from .logic_json_null import LogicJSONNull
+
                 return LogicJSONNull()
 
         LogicJSONParser.parse_error("Not a null")
@@ -256,6 +257,7 @@ class LogicJSONParser:
                 return None
 
             from .logic_json_number import LogicJSONNumber
+
             return LogicJSONNumber(value * multiplier)
 
         LogicJSONParser.parse_error("Not a number")

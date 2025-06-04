@@ -53,6 +53,7 @@ class LogicJSONObject(LogicJSONNode):
 
     def get_json_array(self, key: str):
         from .logic_json_array import LogicJSONArray
+
         node = self.get(key)
         if node and node.get_type() == LogicJSONNodeType.ARRAY:
             return node
@@ -91,8 +92,9 @@ class LogicJSONObject(LogicJSONNode):
         for i, key in enumerate(self.m_keys):
             if i > 0:
                 builder.append(",")
-                
+
             from . import LogicJSONParser
+
             LogicJSONParser.write_string(key, builder)
             builder.append(":")
             self.m_values[i].write_to_string(builder)

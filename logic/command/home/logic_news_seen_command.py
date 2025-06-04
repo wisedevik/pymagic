@@ -17,6 +17,6 @@ class LogicNewsSeenCommand(LogicCommand):
         Debugger.print(f"news_seen={self.news_seen}")
         level.set_last_seen_news(self.news_seen)
         return 0
-    
+
     def get_command_type(self) -> int:
         return 539
