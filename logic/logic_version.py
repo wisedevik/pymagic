@@ -1,4 +1,4 @@
-from titan.config import Configuration
+from server.config import Configuration
 
 
 class LogicVersion:

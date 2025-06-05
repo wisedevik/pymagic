@@ -1,7 +1,7 @@
 import asyncio
 from typing import Optional
 
-from titan.config import Configuration
+from server.config import Configuration
 from server.network.connection import ClientConnectionManager
 from titan.debug.debugger import Debugger
 
