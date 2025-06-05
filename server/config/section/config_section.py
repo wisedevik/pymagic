@@ -3,13 +3,13 @@ from typing import Dict, Any, Generic, T
 
 class ConfigSection(Generic[T]):
     def __init__(self, data: Dict[str, Any]):
-        self._data = data
+        self.data = data
 
     def __getattr__(self, name: str) -> Any:
-        value = self._data[name]
+        value = self.data[name]
         if isinstance(value, dict):
             return ConfigSection(value)
         return value
 
     def as_dict(self) -> Dict[str, Any]:
-        return self._data
+        return self.data

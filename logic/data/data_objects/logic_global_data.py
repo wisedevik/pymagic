@@ -14,17 +14,17 @@ class LogicGlobalData(LogicData):
     def create_references(self):
         super().create_references()
 
-        size = self._row.get_longest_array_size()
+        size = self.row.get_longest_array_size()
         self.number_array = [0] * size
         self.string_array = [""] * size
 
-        self.number_value = self._row.get_integer_value("NumberValue", 0)
-        self.boolean_value = self._row.get_boolean_value("BooleanValue", 0)
-        self.text_value = self._row.get_value("TextValue", 0)
+        self.number_value = self.row.get_integer_value("NumberValue", 0)
+        self.boolean_value = self.row.get_boolean_value("BooleanValue", 0)
+        self.text_value = self.row.get_value("TextValue", 0)
 
         for i in range(size):
-            self.number_array[i] = self._row.get_integer_value("NumberArray", i)
-            self.string_array[i] = self._row.get_value("StringArray", i)
+            self.number_array[i] = self.row.get_integer_value("NumberArray", i)
+            self.string_array[i] = self.row.get_value("StringArray", i)
 
     def get_number_value(self):
         return self.number_value
