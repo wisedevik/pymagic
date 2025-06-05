@@ -5,7 +5,7 @@
 
   <div style="display: flex; justify-content: center; margin: 20px auto; width: 100%;">
     <img src="./assets/screenshot.svg" alt="PyMagic Screenshot" style="max-width: 100%; height: auto; display: block;">
-  </div>-
+  </div>
 
   <div style="text-align: center; margin: 20px auto; width: 100%;">
     <div style="display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 8px;">
