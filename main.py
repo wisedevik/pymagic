@@ -1,5 +1,6 @@
 import asyncio
 
+from server.config import Configuration
 from server.network.tcp.tcp_gateway import TCPGateway
 from server.debug.server_debugger import ServerDebugger
 from server.resources import ResourceManager
@@ -9,7 +10,12 @@ from pyfiglet import figlet_format
 
 
 async def main():
-    print(figlet_format("PyMagic", font="slant"), end="\n\n")
+    print(
+        figlet_format(
+            Configuration.console.figlet_text, font=Configuration.console.figlet_font
+        ),
+        end="\n\n",
+    )
 
     Debugger.set_listener(ServerDebugger("server_log.txt"))
 

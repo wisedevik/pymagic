@@ -51,7 +51,7 @@ class LogicAvatar(LogicBase):
                 return self.resource_count[i].count
         else:
             Debugger.warning(
-                "LogicAvatar.get_resource_count shouldn't be used for diamonds"
+                "Shouldn't be used for diamonds"
             )
 
         return 0
@@ -59,7 +59,7 @@ class LogicAvatar(LogicBase):
     def set_resource_count(self, resource_data: LogicResourceData, cnt: int):
         if resource_data.is_premium_currency():
             Debugger.warning(
-                "LogicAvatar.set_resource_count shouldn't be used for diamonds"
+                "Shouldn't be used for diamonds"
             )
 
         idx = -1

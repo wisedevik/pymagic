@@ -17,8 +17,7 @@ class MessageManager:
         self.connection = connection
 
     async def receive_message(self, message: PiranhaMessage):
-        if message.get_message_type() != 14102:
-            Debugger.print(f"Received message of type: {message.get_message_type()}")
+        Debugger.print(f"Received message of type: {message.get_message_type()}")
 
         match message.get_message_type():
             case 10101:

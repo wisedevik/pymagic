@@ -6,9 +6,6 @@ from titan.debug.debugger import Debugger
 
 
 class ClientConnectionManager:
-    def __init__(self) -> None:
-        self._sessions: Dict[int, ClientConnection] = {}
-
     async def on_connect(
         self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter
     ):

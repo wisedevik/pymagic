@@ -1,11 +1,11 @@
 import asyncio
 from logic.messages.logic_magic_message_factory import (
-    ENCRYPTION_KEY,
     LogicMagicMessageFactory,
 )
 from titan.crypto.rc4_encrypter import RC4Encrypter
 from titan.debug.debugger import Debugger
 from titan.message.piranha_message import PiranhaMessage
+from server.config import Configuration
 
 
 class Messaging:
@@ -15,27 +15,31 @@ class Messaging:
         writer: asyncio.StreamWriter,
         message_manager,
     ) -> None:
-        self._reader = reader
-        self._writer = writer
-        self._receive_encrypter = RC4Encrypter(ENCRYPTION_KEY, "nonce")
-        self._send_encrypter = RC4Encrypter(ENCRYPTION_KEY, "nonce")
-        self._factory = LogicMagicMessageFactory()
-        self._message_manager = message_manager
+        self.reader = reader
+        self.writer = writer
+        self.receive_encrypter = RC4Encrypter(
+            Configuration.crypto.encryption_key, Configuration.crypto.nonce
+        )
+        self.send_encrypter = RC4Encrypter(
+            Configuration.crypto.encryption_key, Configuration.crypto.nonce
+        )
+        self.factory = LogicMagicMessageFactory()
+        self.message_manager = message_manager
 
     async def send(self, message: PiranhaMessage):
         if message.get_encoding_length() == 0:
             message.encode()
 
         encoding_bytes = message.get_message_bytes()
-        encrypted_bytes = self._send_encrypter.encrypt(encoding_bytes)
+        encrypted_bytes = self.send_encrypter.encrypt(encoding_bytes)
         encrypted_length = len(encrypted_bytes)
 
         stream = bytearray(7 + encrypted_length)
         self.write_header(message, stream, encrypted_length)
         stream[7:] = encrypted_bytes
 
-        self._writer.write(stream)
-        await self._writer.drain()
+        self.writer.write(stream)
+        await self.writer.drain()
         Debugger.warning(f"Sent message {message.get_message_type()}")
 
     async def on_receive(self, buffer: bytearray, length: int) -> int:
@@ -49,9 +53,9 @@ class Messaging:
             return 0
 
         encrypted_bytes = buffer[7:required_length]
-        encoding_bytes = self._receive_encrypter.decrypt(encrypted_bytes)
+        encoding_bytes = self.receive_encrypter.decrypt(encrypted_bytes)
 
-        message = self._factory.create_message_by_type(message_type)
+        message = self.factory.create_message_by_type(message_type)
         if not message:
             Debugger.warning(f"Unhandled message type: {message_type}")
             return required_length
@@ -59,7 +63,7 @@ class Messaging:
         message.get_byte_stream().set_byte_array(encoding_bytes, encrypted_length)
         message.set_message_version(message_version)
         message.decode()
-        await self._message_manager.receive_message(message)
+        await self.message_manager.receive_message(message)
 
         return required_length
 

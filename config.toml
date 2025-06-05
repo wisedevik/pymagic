@@ -3,8 +3,16 @@ host = "0.0.0.0"
 port = 9339
 max_connections = 100
 
+[crypto]
+encryption_key = "fhsd6f86f67rt8fw78fw789we78r9789wer6re"
+nonce = "nonce"
+
 [game]
 environment = "int"
 major_version = 5
 build = 2
 content_version = 0
+
+[console]
+figlet_text = "PyMagic"
+figlet_font = "slant"

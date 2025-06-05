@@ -11,10 +11,10 @@ class ClientConnection:
     def __init__(
         self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter
     ) -> None:
-        self._reader = reader
-        self._writer = writer
-        self._messaging = Messaging(reader, writer, MessageManager(self))
-        self._buffer = bytearray(8192)
+        self.reader = reader
+        self.writer = writer
+        self.messaging = Messaging(reader, writer, MessageManager(self))
+        self.buffer = bytearray(8192)
         self.game_mode = GameMode()
 
     def get_game_mode(self) -> GameMode:
@@ -24,24 +24,24 @@ class ClientConnection:
         try:
             offset = 0
             while True:
-                data = await self._reader.read(4096)
+                data = await self.reader.read(4096)
                 if not data:
                     break
 
-                self._buffer[offset : offset + len(data)] = data
+                self.buffer[offset : offset + len(data)] = data
                 offset += len(data)
 
                 processed_offset = 0
                 while True:
-                    consumed = await self._messaging.on_receive(
-                        self._buffer[processed_offset:offset], offset - processed_offset
+                    consumed = await self.messaging.on_receive(
+                        self.buffer[processed_offset:offset], offset - processed_offset
                     )
                     if consumed == 0:
                         break
                     processed_offset += consumed
 
                 if processed_offset > 0:
-                    self._buffer[: offset - processed_offset] = self._buffer[
+                    self.buffer[: offset - processed_offset] = self.buffer[
                         processed_offset:offset
                     ]
                     offset -= processed_offset
@@ -52,4 +52,4 @@ class ClientConnection:
             Debugger.error(f"Unhandled exception in session: {ex}")
 
     async def send_message(self, message: PiranhaMessage):
-        await self._messaging.send(message)
+        await self.messaging.send(message)
