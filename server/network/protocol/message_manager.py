@@ -10,7 +10,7 @@ from titan.math import LogicLong
 from titan.message import PiranhaMessage
 
 from logic.messages.home import OwnHomeDataMessage
-
+from server.database.crud import get_account_by_token, create_account
 
 class MessageManager:
     def __init__(self, connection):
@@ -38,12 +38,20 @@ class MessageManager:
             )
 
     async def on_login_message(self, message: LoginMessage):
-        Debugger.print(f"Received new login")
+        Debugger.print(f"Received new login, pass_token={message.pass_token!r}, account_id={message.account_id}")
+
+        account = await get_account_by_token(message.pass_token)
+
+        if not account and message.account_id.low_integer == 0 and message.pass_token is None:
+            account = await create_account("test@token")
+        elif not account:
+            Debugger.print("Invalid login attempt")
+            return
 
         login_ok = LoginOkMessage()
-        login_ok.account_id = LogicLong(0, 32)
-        login_ok.home_id = LogicLong(0, 32)
-        login_ok.pass_token = "secret@token"
+        login_ok.account_id = LogicLong(0, account.id)
+        login_ok.home_id = LogicLong(0, account.id)
+        login_ok.pass_token = account.pass_token
         login_ok.environment = Configuration.game.environment
         login_ok.major_version = LogicVersion.major_version
         login_ok.build = LogicVersion.build
