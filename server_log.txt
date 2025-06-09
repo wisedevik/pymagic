@@ -162,3 +162,93 @@
 [INFO] (2025-06-05 11:29:45) [TCPGateway.stop] Server stopped
 [INFO] (2025-06-05 11:38:53) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
 [INFO] (2025-06-05 11:38:54) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-09 11:29:29) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-09 11:33:37) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 51807)
+[WARNING] (2025-06-09 11:33:37) [ByteStream.read_string] Too long String encountered, max 900001
+[INFO] (2025-06-09 11:33:37) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-09 11:33:37) [MessageManager.on_login_message] Received new login, pass_token=None, account_id=LogicLong(0,0)
+[WARNING] (2025-06-09 11:33:37) [Messaging.send] Sent message 20104
+[INFO] (2025-06-09 11:33:37) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-09 11:33:37) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-09 11:33:37) [Messaging.send] Sent message 24101
+[INFO] (2025-06-09 11:33:46) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:47) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:48) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:49) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:50) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:51) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:52) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:53) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:54) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:55) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:56) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:57) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:58) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:33:59) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:00) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:01) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:02) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:03) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:04) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:05) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:06) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:07) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:08) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:09) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:10) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:11) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:12) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:13) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:14) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:15) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:16) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:17) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:18) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:19) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:20) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:21) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:22) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:23) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:24) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:25) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:26) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:27) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:28) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:29) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:30) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:31) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:32) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:33) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:34) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:34:35) [MessageManager.receive_message] Received message of type: 14102
+[WARNING] (2025-06-09 11:34:35) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-09 11:40:58) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-09 11:40:58) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 52037)
+[INFO] (2025-06-09 11:40:58) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-09 11:40:58) [MessageManager.on_login_message] Received new login, pass_token='test@token', account_id=LogicLong(0,1)
+[WARNING] (2025-06-09 11:40:58) [Messaging.send] Sent message 20104
+[INFO] (2025-06-09 11:40:58) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-09 11:40:58) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-09 11:40:58) [Messaging.send] Sent message 24101
+[INFO] (2025-06-09 11:41:01) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:41:02) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:41:03) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:41:04) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:41:05) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:41:06) [MessageManager.receive_message] Received message of type: 14102
+[WARNING] (2025-06-09 11:41:06) [ClientConnectionManager.on_connect] User has disconnected
+[INFO] (2025-06-09 11:46:49) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-09 11:51:42) [TCPGateway.stop] Server stopped
+[INFO] (2025-06-09 11:52:11) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
+[INFO] (2025-06-09 11:52:12) [ClientConnectionManager.on_connect] New connection from ('192.168.0.16', 52662)
+[INFO] (2025-06-09 11:52:12) [MessageManager.receive_message] Received message of type: 10101
+[INFO] (2025-06-09 11:52:12) [MessageManager.on_login_message] Received new login, pass_token='test@token', account_id=LogicLong(0,1)
+[WARNING] (2025-06-09 11:52:12) [Messaging.send] Sent message 20104
+[INFO] (2025-06-09 11:52:12) [LogicClientAvatar.set_resource_count] Added resource Gold (3000001)
+[INFO] (2025-06-09 11:52:12) [LogicClientAvatar.set_resource_count] Added resource Elixir (3000002)
+[WARNING] (2025-06-09 11:52:12) [Messaging.send] Sent message 24101
+[INFO] (2025-06-09 11:52:16) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:52:17) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:52:18) [MessageManager.receive_message] Received message of type: 14102
+[INFO] (2025-06-09 11:52:19) [MessageManager.receive_message] Received message of type: 14102
+[WARNING] (2025-06-09 11:52:20) [ClientConnectionManager.on_connect] User has disconnected

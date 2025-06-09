@@ -18,4 +18,5 @@ figlet_text = "PyMagic"
 figlet_font = "slant"
 
 [database]
-connection_string = "postgresql+asyncpg://postgres:bladewise@localhost:5432/magic"
+database_type = "postgresql+asyncpg"
+url = "postgres:anybody@localhost:5432/postgres"
