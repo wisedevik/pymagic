@@ -85,7 +85,7 @@ class LogicClientAvatar(LogicAvatar):
         encoder.write_int(0)
         encoder.write_int(0)
 
-        encoder.write_int(self.mission_completed.count)  # skip tutorial
+        encoder.write_int(self.mission_completed.count)
         for item in self.mission_completed:
             ByteStreamHelper.write_data_reference(encoder, item)
 

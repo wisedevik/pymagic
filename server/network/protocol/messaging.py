@@ -13,7 +13,6 @@ class Messaging:
         self,
         reader: asyncio.StreamReader,
         writer: asyncio.StreamWriter,
-        message_manager,
     ) -> None:
         self.reader = reader
         self.writer = writer
@@ -24,7 +23,7 @@ class Messaging:
             Configuration.crypto.encryption_key, Configuration.crypto.nonce
         )
         self.factory = LogicMagicMessageFactory()
-        self.message_manager = message_manager
+        self.incoming_queue = asyncio.Queue()
 
     async def send(self, message: PiranhaMessage):
         if message.get_encoding_length() == 0:
@@ -41,6 +40,9 @@ class Messaging:
         self.writer.write(stream)
         await self.writer.drain()
         Debugger.warning(f"Sent message {message.get_message_type()}")
+
+    async def next_message(self) -> PiranhaMessage:
+        return await self.incoming_queue.get()
 
     async def on_receive(self, buffer: bytearray, length: int) -> int:
         if length < 7:
@@ -63,7 +65,8 @@ class Messaging:
         message.get_byte_stream().set_byte_array(encoding_bytes, encrypted_length)
         message.set_message_version(message_version)
         message.decode()
-        await self.message_manager.receive_message(message)
+
+        await self.incoming_queue.put(message)
 
         return required_length
 

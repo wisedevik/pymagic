@@ -13,7 +13,8 @@ class ClientConnection:
     ) -> None:
         self.reader = reader
         self.writer = writer
-        self.messaging = Messaging(reader, writer, MessageManager(self))
+        self.messaging = Messaging(reader, writer)
+        self.message_manager = MessageManager(self)
         self.buffer = bytearray(8192)
         self.game_mode = GameMode()
 
@@ -39,6 +40,9 @@ class ClientConnection:
                     if consumed == 0:
                         break
                     processed_offset += consumed
+
+                    message = await self.messaging.next_message()
+                    await self.message_manager.receive_message(message)
 
                 if processed_offset > 0:
                     self.buffer[: offset - processed_offset] = self.buffer[
