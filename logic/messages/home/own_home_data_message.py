@@ -4,6 +4,8 @@ from logic.home import LogicClientHome
 
 
 class OwnHomeDataMessage(PiranhaMessage):
+    MESSAGE_TYPE = 24101
+    
     def __init__(self) -> None:
         super().__init__()
         self.seconds_since_last_save: int = 0
@@ -26,7 +28,7 @@ class OwnHomeDataMessage(PiranhaMessage):
         self.avatar.encode(self.stream)
 
     def get_message_type(self) -> int:
-        return 24101
+        return self.MESSAGE_TYPE
 
     def get_service_node_type(self) -> int:
         return 10

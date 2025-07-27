@@ -3,6 +3,8 @@ from titan.message.piranha_message import PiranhaMessage
 
 
 class LoginOkMessage(PiranhaMessage):
+    MESSAGE_TYPE = 20104
+    
     def __init__(self) -> None:
         super().__init__()
         self.account_id = LogicLong()
@@ -34,4 +36,4 @@ class LoginOkMessage(PiranhaMessage):
         self.stream.write_string("")
 
     def get_message_type(self) -> int:
-        return 20104
+        return self.MESSAGE_TYPE
