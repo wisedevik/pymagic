@@ -5,7 +5,7 @@ from logic.home import LogicClientHome
 
 class OwnHomeDataMessage(PiranhaMessage):
     MESSAGE_TYPE = 24101
-    
+
     def __init__(self) -> None:
         super().__init__()
         self.seconds_since_last_save: int = 0

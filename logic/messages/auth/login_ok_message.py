@@ -4,7 +4,7 @@ from titan.message.piranha_message import PiranhaMessage
 
 class LoginOkMessage(PiranhaMessage):
     MESSAGE_TYPE = 20104
-    
+
     def __init__(self) -> None:
         super().__init__()
         self.account_id = LogicLong()
