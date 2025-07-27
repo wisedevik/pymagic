@@ -100,7 +100,6 @@ class LogicJSONObject(LogicJSONNode):
             self.m_values[i].write_to_string(builder)
         builder.append("}")
 
-
     def __str__(self) -> str:
         builder: list[str] = []
         self.write_to_string(builder)
