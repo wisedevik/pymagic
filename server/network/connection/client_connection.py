@@ -16,7 +16,7 @@ class ClientConnection:
         self.messaging = Messaging(reader, writer)
         self.message_manager = MessageManager(self)
         self.buffer = bytearray(8192)
-        self.game_mode = GameMode()
+        self.game_mode = GameMode(self)
 
     def get_game_mode(self) -> GameMode:
         return self.game_mode

@@ -62,7 +62,7 @@ class LogicCommandManager:
                         if command.execute(self.level) == 0:
                             ...  # listener.command_executed(command);
 
-                        self.commands.remove(command)
+                        self.commands.remove(i)
                     else:
                         Debugger.warning(
                             f"Execute command failed! Command not allowed in current state. (type={command.get_command_type()} current_state={self.level.get_state()}"
@@ -75,7 +75,7 @@ class LogicCommandManager:
         command = commands_registry.get(command_type)
 
         if command:
-            return command
+            return command()
         else:
             Debugger.warning(f"Unknown command type: {command_type}")
 

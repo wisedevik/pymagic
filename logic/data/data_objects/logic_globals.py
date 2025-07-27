@@ -6,12 +6,15 @@ class LogicGlobals(LogicDataTable):
     def __init__(self, table, index):
         super().__init__(table, index)
 
+        self.alliance_create_cost = 0
         self.starting_diamonds = 0
         self.starting_elixir = 0
         self.starting_gold = 0
 
+
     def create_references(self):
         super().create_references()
+        self.alliance_create_cost = self.get_int_value("ALLIANCE_CREATE_COST")
         self.starting_diamonds = self.get_int_value("STARTING_DIAMONDS")
         self.starting_elixir = self.get_int_value("STARTING_ELIXIR")
         self.starting_gold = self.get_int_value("STARTING_GOLD")
@@ -21,10 +24,13 @@ class LogicGlobals(LogicDataTable):
 
         return LogicDataTables.get_global_by_name(name, None)
 
-    def get_starting_gold(self):
+    def get_alliance_create_cost(self) -> int:
+        return self.alliance_create_cost
+
+    def get_starting_gold(self) -> int:
         return self.starting_gold
 
-    def get_starting_diamonds(self):
+    def get_starting_diamonds(self) -> int:
         return self.starting_diamonds
 
     def get_starting_elixir(self):

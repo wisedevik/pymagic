@@ -2,6 +2,7 @@ from matplotlib import is_interactive
 from logic.command.logic_command_manager import LogicCommandManager
 from logic.time.logic_timer import LogicTimer
 from titan.debug.debugger import Debugger
+from titan.json.logic_json_object import LogicJSONObject
 
 
 class LogicGameMode:
@@ -52,6 +53,9 @@ class LogicGameMode:
 
     def tick(self):
         self.level.tick()
+
+    def save_to_json(self, json_obj: LogicJSONObject):
+        self.level.save_to_json(json_obj)
 
     def update_one_sub_tick(self):
         logic_time = self.level.get_logic_time()

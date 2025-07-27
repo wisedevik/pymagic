@@ -3,7 +3,7 @@ from logic.data.core.logic_data_type import LogicDataType
 from titan.csv.csv_row import CSVRow
 
 
-class LogicData:
+class LogicData():
     def __init__(self, row: CSVRow, table):
         self.row = row
         self.table = table
