@@ -42,4 +42,4 @@ PyMagic is a minimalistic, fully async Clash of Clans server written in Python f
 
 ## License
 
-[MIT License](https://github.com/wisedevik/pymagic/blob/main/LICENSE)
+[MIT](https://github.com/wisedevik/pymagic/blob/main/LICENSE)
