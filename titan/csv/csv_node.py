@@ -6,19 +6,19 @@ from titan.util.logic_array_list import LogicArrayList
 
 class CSVNode:
     def __init__(self, lines: list[str], file_name: str):
-        self._name = file_name
-        self._table: CSVTable | None = None
+        self.name = file_name
+        self.table: CSVTable | None = None
         self.load(lines)
 
     def load(self, lines: list[str]) -> None:
-        self._table = CSVTable(self, len(lines))
+        self.table = CSVTable(self, len(lines))
 
         if len(lines) >= 2:
             column_names = self.parse_line(lines[0])
             column_types = self.parse_line(lines[1])
 
             for name in column_names:
-                self._table.add_column(name)
+                self.table.add_column(name)
 
             for i, raw_type_str in enumerate(column_types):
                 column_type = -1
@@ -34,21 +34,21 @@ class CSVNode:
                         column_type = 2
                     else:
                         Debugger.error(
-                            f"Invalid column type '{type_str}', column name {column_names[i]}, file {self._name}. Expecting: int/string/boolean."
+                            f"Invalid column type '{type_str}', column name {column_names[i]}, file {self.name}. Expecting: int/string/boolean."
                         )
 
-                self._table.add_column_type(column_type)
+                self.table.add_column_type(column_type)
 
-            self._table.validate_column_types()
+            self.table.validate_column_types()
 
             for i in range(2, len(lines)):
                 values = self.parse_line(lines[i])
 
                 if values.count > 0 and values[0]:
-                    self._table.create_row()
+                    self.table.create_row()
 
                     for j, val in enumerate(values):
-                        self._table.add_and_convert_value(val, j)
+                        self.table.add_and_convert_value(val, j)
 
     def parse_line(self, line: str) -> LogicArrayList[str]:
         line = line.rstrip("\n")
@@ -79,11 +79,11 @@ class CSVNode:
         return fields
 
     def set_name(self, name: str) -> None:
-        self._name = name
+        self.name = name
 
     def get_name(self) -> str:
-        return self._name
+        return self.name
 
     def get_table(self) -> CSVTable:
-        assert self._table is not None
-        return self._table
+        assert self.table is not None
+        return self.table

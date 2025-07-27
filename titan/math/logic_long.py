@@ -12,4 +12,4 @@ class LogicLong:
         encoder.write_int(self.low_integer)
 
     def __str__(self) -> str:
-        return f"LogicLong({self.high_integer}-{self.low_integer})"
+        return f"LogicLong({self.high_integer},{self.low_integer})"
