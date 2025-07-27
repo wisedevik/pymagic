@@ -6,12 +6,24 @@ from logic.home import LogicClientHome
 class OwnHomeDataMessage(PiranhaMessage):
     def __init__(self) -> None:
         super().__init__()
+        self.seconds_since_last_save: int = 0
+        self.home: LogicClientHome | None = None
+        self.avatar: LogicClientAvatar | None = None
+
+    def set_seconds_since_last_save(self, s: int):
+        self.seconds_since_last_save = s
+
+    def set_home(self, home: LogicClientHome):
+        self.home = home;
+
+    def set_avatar(self, avatar: LogicClientAvatar):
+        self.avatar = avatar;
 
     def encode(self):
         super().encode()
-        self.stream.write_int(0)
-        LogicClientHome().encode(self.stream)
-        LogicClientAvatar.get_default_avatar().encode(self.stream)
+        self.stream.write_int(self.seconds_since_last_save)
+        self.home.encode(self.stream)
+        self.avatar.encode(self.stream)
 
     def get_message_type(self) -> int:
         return 24101

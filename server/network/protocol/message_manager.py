@@ -1,10 +1,14 @@
 from typing import cast
+from logic.avatar.logic_client_avatar import LogicClientAvatar
+from logic.home.logic_client_home import LogicClientHome
 from logic.messages.home.end_client_turn_message import EndClientTurnMessage
 from server.mode.game_mode import GameMode
 from server.config import Configuration
 from logic import LogicVersion
 from logic.messages.auth import LoginMessage
 from logic.messages.auth import LoginOkMessage
+from server.resources.resource_manager import ResourceManager
+from server.util.util import Util
 from titan.debug import Debugger
 from titan.math import LogicLong
 from titan.message import PiranhaMessage
@@ -21,9 +25,9 @@ class MessageManager:
         Debugger.print(f"Received message of type: {message.get_message_type()}")
 
         match message.get_message_type():
-            case 10101:
+            case LoginMessage.MESSAGE_TYPE:
                 await self.on_login_message(cast(LoginMessage, message))
-            case 14102:
+            case EndClientTurnMessage.MESSAGE_TYPE:
                 await self.on_end_client_turn_message(
                     cast(EndClientTurnMessage, message)
                 )
@@ -50,7 +54,7 @@ class MessageManager:
             and message.account_id.low_integer == 0
             and message.pass_token is None
         ):
-            account = await AccountCrud.create_account("test@token")
+            account = await AccountCrud.create_account(Util.random_string())
         elif not account:
             Debugger.print("Invalid login attempt")
             return
@@ -65,4 +69,12 @@ class MessageManager:
         login_ok.minor_version = LogicVersion.content_version
 
         await self.connection.send_message(login_ok)
-        await self.connection.send_message(OwnHomeDataMessage())
+
+        own_home_data_message = OwnHomeDataMessage()
+        home = LogicClientHome()
+        home.set_home_json(ResourceManager.STARTING_HOME_JSON)
+        own_home_data_message.set_seconds_since_last_save(0)
+        own_home_data_message.set_home(home)
+        own_home_data_message.set_avatar(LogicClientAvatar.get_default_avatar());
+
+        await self.connection.send_message()

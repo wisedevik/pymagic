@@ -3,6 +3,7 @@ from titan.math.logic_long import LogicLong
 
 
 class LoginMessage(PiranhaMessage):
+    MESSAGE_TYPE = 10101
     def __init__(self) -> None:
         super().__init__()
         self.account_id = LogicLong()
@@ -20,7 +21,7 @@ class LoginMessage(PiranhaMessage):
         self.build = self.stream.read_int()
 
     def get_message_type(self) -> int:
-        return 10101
+        return self.MESSAGE_TYPE
 
     def get_service_node_type(self) -> int:
         return 1

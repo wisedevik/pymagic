@@ -19,4 +19,8 @@ figlet_font = "slant"
 
 [database]
 database_type = "postgresql+asyncpg"
-url = "postgres:anybody@localhost:5432/postgres"
+url = "username:password@127.0.0.1:5432/magic"
+
+
+[assets]
+path = "server/assets/"

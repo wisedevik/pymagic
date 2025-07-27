@@ -1,13 +1,6 @@
 import asyncio
-from asyncio.tasks import Task
 
-from logic.avatar.logic_client_avatar import LogicClientAvatar
-from logic.data.core.global_id import GlobalID
-from logic.data.core.logic_data_type import LogicDataType
-from logic.data.tables.logic_data_table import LogicDataTable
-from logic.data.tables.logic_data_tables import LogicDataTables
 from server.network.tcp.tcp_gateway import TCPGateway
-from server.config import Configuration
 from server.debug.server_debugger import ServerDebugger
 from server.resources.resource_manager import ResourceManager
 from titan.debug.debugger import Debugger
@@ -17,6 +10,7 @@ async def main():
     Debugger.set_listener(ServerDebugger("server_log.txt"))
 
     ResourceManager.load_game_resources()
+    ResourceManager.load_starting_home_json()
 
     gateway = TCPGateway()
     await gateway.start()
