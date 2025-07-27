@@ -1,35 +1,19 @@
-from typing import Tuple
-import socket
 import asyncio
-from typing import Dict
+from typing import Dict, Tuple
 
-from server.network.connection.client_connection import ClientConnection
+from server.network.connection import ClientConnection
 from titan.debug.debugger import Debugger
 
 
 class ClientConnectionManager:
-    def __init__(self) -> None:
-        self._sessions: Dict[int, ClientConnection] = {}
+    async def on_connect(
+        self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter
+    ):
+        addr = writer.get_extra_info("peername")
+        Debugger.print(f"New connection from {addr}")
 
-    def on_connect(self, client_socket: socket.socket, addr: Tuple[str, int]):
-        client_socket.setblocking(False)
-
-        Debugger.print(
-            f"[ClientConnectionManager.on_connect] New connection from {addr}"
-        )
-        asyncio.create_task(self.run_session_async(client_socket))
-
-    async def run_session_async(self, client_socket: socket.socket):
-        session = ClientConnection(client_socket)
-
+        session = ClientConnection(reader, writer)
         try:
             await session.receive()
-        except asyncio.CancelledError:
-            pass
-        except Exception as ex:
-            Debugger.error(f"Unhandled exception in session: {ex}")
         finally:
-            Debugger.warning(
-                "[ClientConnectionManager.run_session_async] User has disconnected"
-            )
-            client_socket.close()
+            Debugger.warning("User has disconnected")

@@ -8,7 +8,9 @@ class PiranhaMessageMeta(type):
     def __init__(cls, name, bases, attrs):
         super().__init__(name, bases, attrs)
         if name != "PiranhaMessage":
-            message_registry[cls().get_message_type()] = cls
+            instance = cls()
+            if instance.is_client_to_server_message():
+                message_registry[instance.get_message_type()] = cls
 
 
 class PiranhaMessage(metaclass=PiranhaMessageMeta):
@@ -34,6 +36,9 @@ class PiranhaMessage(metaclass=PiranhaMessageMeta):
 
     def is_server_to_client_message(self) -> bool:
         return self.get_message_type() >= 20000
+
+    def is_client_to_server_message(self) -> bool:
+        return self.get_message_type() <= 20000
 
     def get_message_bytes(self) -> bytearray:
         return self.stream.get_byte_array()

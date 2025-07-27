@@ -8,6 +8,8 @@ from logic.data.tables.logic_data_table import LogicDataTable
 from logic.data.core.logic_data_type import LogicDataType
 from titan.csv.csv_node import CSVNode
 from logic.data.data_objects.logic_resource_data import LogicResourceData
+from logic.data.data_objects.logic_global_data import LogicGlobalData
+from logic.data.data_objects.logic_globals import LogicGlobals
 from typing import cast
 
 
@@ -16,6 +18,8 @@ TABLE_COUNT = 52
 
 class LogicDataTables:
     _tables: List[Optional[LogicDataTable]] = [None] * TABLE_COUNT
+    gold_data: LogicResourceData
+    elixir_data: LogicResourceData
 
     @staticmethod
     def init():
@@ -30,7 +34,7 @@ class LogicDataTables:
             table.set_table(table_data)
         else:
             if index == LogicDataType.GLOBAL:
-                pass
+                LogicDataTables._tables[index] = LogicGlobals(table_data, index)
             else:
                 LogicDataTables._tables[index] = LogicDataTable(table_data, index)
 
@@ -42,6 +46,19 @@ class LogicDataTables:
                 assert isinstance(table, LogicDataTable)
                 table.create_references()
 
+        LogicDataTables.gold_data = LogicDataTables.get_resource_by_name("Gold", None)
+        LogicDataTables.elixir_data = LogicDataTables.get_resource_by_name(
+            "Elixir", None
+        )
+
+    @staticmethod
+    def get_gold_data() -> LogicResourceData:
+        return LogicDataTables.gold_data
+
+    @staticmethod
+    def get_elixir_data() -> LogicResourceData:
+        return LogicDataTables.elixir_data
+
     @staticmethod
     def get_table(table_index: LogicDataType) -> Optional[LogicDataTable]:
         return LogicDataTables._tables[table_index]
@@ -49,7 +66,12 @@ class LogicDataTables:
     @staticmethod
     def get_data_by_id(global_id: int) -> Optional[LogicData]:
         table_index = GlobalID.get_class_id(global_id) - 1
-        if 0 <= table_index < TABLE_COUNT:
+
+        if (
+            table_index >= 0
+            and table_index < TABLE_COUNT
+            and LogicDataTables._tables[table_index] != None
+        ):
             table = LogicDataTables._tables[table_index]
             if table:
                 return table.get_item_by_id(global_id)
@@ -72,6 +94,11 @@ class LogicDataTables:
         assert isinstance(table, LogicDataTable)
 
         return table.get_data_by_name(name, caller)
+
+    @staticmethod
+    def get_globals() -> LogicGlobals:
+        table = LogicDataTables._tables[LogicDataType.GLOBAL]
+        return table
 
     @staticmethod
     def get_resource_by_name(
@@ -100,3 +127,10 @@ class LogicDataTables:
         if table:
             return cast(LogicBuildingClassData, table.get_data_by_name(name, caller))
         return None
+
+    @staticmethod
+    def get_global_by_name(name: str, caller: Optional[LogicData]) -> LogicGlobalData:
+        table = LogicDataTables._tables[LogicDataType.GLOBAL]
+        assert isinstance(table, LogicDataTable)
+
+        return cast(LogicGlobalData, table.get_data_by_name(name, caller))

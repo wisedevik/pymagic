@@ -1,0 +1,6 @@
+asyncpg
+calltracing==1.0.1
+toml
+rich
+pyfiglet
+sqlalchemy
