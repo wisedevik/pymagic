@@ -21,6 +21,5 @@ figlet_font = "slant"
 database_type = "postgresql+asyncpg"
 url = "username:password@127.0.0.1:5432/magic"
 
-
 [assets]
 path = "server/assets/"

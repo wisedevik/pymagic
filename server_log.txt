@@ -1,8 +1,0 @@
-[INFO] (2025-07-27 11:39:56) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
-[INFO] (2025-07-27 11:39:57) [TCPGateway.stop] Server stopped
-[INFO] (2025-07-27 11:40:45) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
-[INFO] (2025-07-27 11:40:46) [TCPGateway.stop] Server stopped
-[INFO] (2025-07-27 11:41:11) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
-[INFO] (2025-07-27 11:41:11) [TCPGateway.stop] Server stopped
-[INFO] (2025-07-27 11:42:48) [TCPGateway.start] Server is listening on ('0.0.0.0', 9339))
-[INFO] (2025-07-27 11:42:50) [TCPGateway.stop] Server stopped

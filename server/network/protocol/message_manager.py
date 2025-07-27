@@ -77,4 +77,4 @@ class MessageManager:
         own_home_data_message.set_home(home)
         own_home_data_message.set_avatar(LogicClientAvatar.get_default_avatar());
 
-        await self.connection.send_message()
+        await self.connection.send_message(own_home_data_message)
