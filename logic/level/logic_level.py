@@ -49,10 +49,10 @@ class LogicLevel:
     def tick(self): ...
 
     def save_to_json(self, json_obj: LogicJSONObject):
-        if (self.wave_number >= 1):
+        if self.wave_number >= 1:
             json_obj.put("wave_num", LogicJSONNumber(self.wave_number))
 
-        if (self.android_client):
+        if self.android_client:
             json_obj.put("android_client", LogicJSONBoolean(self.android_client))
 
         json_obj.put("last_news_seen", LogicJSONNumber(self.last_seen_news))

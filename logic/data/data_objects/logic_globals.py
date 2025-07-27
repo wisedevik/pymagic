@@ -11,7 +11,6 @@ class LogicGlobals(LogicDataTable):
         self.starting_elixir = 0
         self.starting_gold = 0
 
-
     def create_references(self):
         super().create_references()
         self.alliance_create_cost = self.get_int_value("ALLIANCE_CREATE_COST")

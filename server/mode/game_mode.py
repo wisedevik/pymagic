@@ -10,6 +10,7 @@ from titan.debug.debugger import Debugger
 from titan.util.logic_array_list import LogicArrayList
 from titan.json.logic_json_object import LogicJSONObject
 
+
 class GameMode:
     def __init__(self, connection) -> None:
         self.logic_game_mode = LogicGameMode()
@@ -36,6 +37,6 @@ class GameMode:
         self.save_state()
 
     def save_state(self):
-        if (self.logic_game_mode.get_state() == 1):
+        if self.logic_game_mode.get_state() == 1:
             jsonObject = LogicJSONObject()
             self.logic_game_mode.save_to_json(jsonObject)

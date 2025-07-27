@@ -4,7 +4,7 @@ from titan.datastream.byte_stream import ByteStream
 from titan.datastream.checksum_encoder import ChecksumEncoder
 
 
-class LogicDataSlot():
+class LogicDataSlot:
     def __init__(self, data: LogicData, count: int) -> None:
         self.data = data
         self.count = count
