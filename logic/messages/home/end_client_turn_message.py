@@ -5,10 +5,9 @@ from titan.message.piranha_message import PiranhaMessage
 from titan.util.logic_array_list import LogicArrayList
 
 
-MESSAGE_TYPE = 14102
-
-
 class EndClientTurnMessage(PiranhaMessage):
+    MESSAGE_TYPE = 14102
+
     def __init__(self) -> None:
         super().__init__()
         self.sub_tick = 0
@@ -39,4 +38,4 @@ class EndClientTurnMessage(PiranhaMessage):
             )
 
     def get_message_type(self) -> int:
-        return MESSAGE_TYPE
+        return self.MESSAGE_TYPE

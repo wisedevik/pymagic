@@ -1,4 +1,3 @@
-from matplotlib import is_interactive
 from logic.command.logic_command_manager import LogicCommandManager
 from logic.time.logic_timer import LogicTimer
 from titan.debug.debugger import Debugger

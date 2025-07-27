@@ -5,7 +5,8 @@ from server.config import Configuration
 from server.database.models import Base
 
 engine = create_async_engine(
-    f"{Configuration.database.database_type}://{Configuration.database.url}", echo=False
+    f"{Configuration.database.database_type}:///{Configuration.database.url}",
+    echo=False,
 )
 AsyncSessionLocal = sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
 

@@ -1,22 +1,29 @@
 import asyncio
-from asyncio.tasks import Task
 
-from logic.avatar.logic_client_avatar import LogicClientAvatar
-from logic.data.core.global_id import GlobalID
-from logic.data.core.logic_data_type import LogicDataType
-from logic.data.tables.logic_data_table import LogicDataTable
-from logic.data.tables.logic_data_tables import LogicDataTables
+from server.config.configuration import Configuration
+from server.database.base import init_db
 from server.network.tcp.tcp_gateway import TCPGateway
-from server.config import Configuration
 from server.debug.server_debugger import ServerDebugger
 from server.resources.resource_manager import ResourceManager
 from titan.debug.debugger import Debugger
 
+from pyfiglet import figlet_format
+
 
 async def main():
+    print(
+        figlet_format(
+            Configuration.console.figlet_text, font=Configuration.console.figlet_font
+        ),
+        end="\n\n",
+    )
+
     Debugger.set_listener(ServerDebugger("server_log.txt"))
 
     ResourceManager.load_game_resources()
+    ResourceManager.load_starting_home_json()
+
+    await init_db()
 
     gateway = TCPGateway()
     await gateway.start()
