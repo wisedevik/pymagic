@@ -17,15 +17,15 @@
 
 ## Overview
 
-PyMagic is a minimalistic, fully async Clash of Clans server written in Python from scratch.
+PyMagic is a minimalistic, fully async Clash of Clans server written in Python from scratch
 
 ## Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/wisedevik/Wisedev.Magic.Py
-    cd Wisedev.Magic.Py
+    git clone https://github.com/wisedevik/pymagic
+    cd pymagic
     ```
 
 2. Install requirements:
@@ -42,4 +42,4 @@ PyMagic is a minimalistic, fully async Clash of Clans server written in Python f
 
 ## License
 
-[MIT License](https://github.com/wisedevik/Wisedev.Magic.Py/blob/main/LICENSE)
+[MIT License](https://github.com/wisedevik/pymagic/blob/main/LICENCE)
