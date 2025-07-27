@@ -15,7 +15,7 @@ class LogicClientHome(LogicBase):
         self.defense_kfactor = 0
 
     def set_home_json(self, json):
-        self.home_json = json;
+        self.home_json = json
 
     def encode(self, encoder: ChecksumEncoder):
         super().encode(encoder)

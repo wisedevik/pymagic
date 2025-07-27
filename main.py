@@ -9,13 +9,14 @@ from titan.debug.debugger import Debugger
 
 from pyfiglet import figlet_format
 
+
 async def main():
     print(
-           figlet_format(
-               Configuration.console.figlet_text, font=Configuration.console.figlet_font
-           ),
-           end="\n\n",
-       )
+        figlet_format(
+            Configuration.console.figlet_text, font=Configuration.console.figlet_font
+        ),
+        end="\n\n",
+    )
 
     Debugger.set_listener(ServerDebugger("server_log.txt"))
 

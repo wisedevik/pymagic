@@ -14,10 +14,10 @@ class OwnHomeDataMessage(PiranhaMessage):
         self.seconds_since_last_save = s
 
     def set_home(self, home: LogicClientHome):
-        self.home = home;
+        self.home = home
 
     def set_avatar(self, avatar: LogicClientAvatar):
-        self.avatar = avatar;
+        self.avatar = avatar
 
     def encode(self):
         super().encode()

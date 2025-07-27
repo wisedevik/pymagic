@@ -75,6 +75,6 @@ class MessageManager:
         home.set_home_json(ResourceManager.STARTING_HOME_JSON)
         own_home_data_message.set_seconds_since_last_save(0)
         own_home_data_message.set_home(home)
-        own_home_data_message.set_avatar(LogicClientAvatar.get_default_avatar());
+        own_home_data_message.set_avatar(LogicClientAvatar.get_default_avatar())
 
         await self.connection.send_message(own_home_data_message)

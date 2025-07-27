@@ -1,3 +1,3 @@
 __all__ = ["Util"]
 
-from .util import Util;
+from .util import Util

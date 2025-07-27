@@ -6,6 +6,7 @@ from titan.csv.csv_node import CSVNode
 
 class ResourceManager:
     STARTING_HOME_JSON = ""
+
     @staticmethod
     def load_game_resources():
         LogicDataTables.init()
@@ -21,5 +22,7 @@ class ResourceManager:
 
     @staticmethod
     def load_starting_home_json():
-        with open(f"{Configuration.assets.path}/starting_home.json", "r",  encoding="utf-8") as f:
+        with open(
+            f"{Configuration.assets.path}/starting_home.json", "r", encoding="utf-8"
+        ) as f:
             ResourceManager.STARTING_HOME_JSON = f.read()

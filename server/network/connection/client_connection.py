@@ -32,7 +32,7 @@ class ClientConnection:
                     )
                     if not consumed:
                         break
-                    
+
                     message = await self.messaging.next_message()
                     await self.message_manager.receive_message(message)
                     del self.buffer[:consumed]

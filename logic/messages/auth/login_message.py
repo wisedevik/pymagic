@@ -4,6 +4,7 @@ from titan.math.logic_long import LogicLong
 
 class LoginMessage(PiranhaMessage):
     MESSAGE_TYPE = 10101
+
     def __init__(self) -> None:
         super().__init__()
         self.account_id = LogicLong()

@@ -7,6 +7,7 @@ from titan.util.logic_array_list import LogicArrayList
 
 class EndClientTurnMessage(PiranhaMessage):
     MESSAGE_TYPE = 14102
+
     def __init__(self) -> None:
         super().__init__()
         self.sub_tick = 0
