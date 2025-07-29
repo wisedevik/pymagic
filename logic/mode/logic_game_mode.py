@@ -1,3 +1,4 @@
+from logic.level.logic_level import LogicLevel
 from logic.command.logic_command_manager import LogicCommandManager
 from logic.time.logic_timer import LogicTimer
 from titan.debug.debugger import Debugger
@@ -8,8 +9,6 @@ class LogicGameMode:
 
     def __init__(self):
         self.state = 1
-
-        from logic.level.logic_level import LogicLevel
 
         self.level = LogicLevel(self)
         self.battle_over = False
