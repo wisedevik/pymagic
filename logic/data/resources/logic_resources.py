@@ -3,6 +3,7 @@ from logic.data.string.logic_string_table import LogicStringTable
 from logic.data.tables.logic_data_table_resource import LogicDataTableResource
 from logic.data.tables.logic_data_tables import TABLE_COUNT, LogicDataTables
 from logic.data.core.logic_data_type import LogicDataType
+from server.config.configuration import Configuration
 from titan.csv.csv_node import CSVNode
 from titan.debug.debugger import Debugger
 from titan.util.logic_array_list import LogicArrayList
@@ -11,20 +12,22 @@ from titan.util.logic_array_list import LogicArrayList
 class LogicResources:
     @staticmethod
     def create_data_table_resources_array() -> LogicArrayList[LogicDataTableResource]:
+        path: str = Configuration.assets.path
+
         array_list = LogicArrayList[LogicDataTableResource](TABLE_COUNT)
         array_list.add(
             LogicDataTableResource(
-                "server/assets/csv_logic/buildings.csv", LogicDataType.BUILDING, 0
+                f"{path}/csv_logic/buildings.csv", LogicDataType.BUILDING, 0
             )
         )
         array_list.add(
             LogicDataTableResource(
-                "server/assets/csv_logic/resources.csv", LogicDataType.RESOURCE, 0
+                f"{path}/csv_logic/resources.csv", LogicDataType.RESOURCE, 0
             )
         )
         array_list.add(
             LogicDataTableResource(
-                "server/assets/csv_logic/building_classes.csv",
+                f"{path}/csv_logic/building_classes.csv",
                 LogicDataType.BUILDING_CLASS,
                 0,
             )
@@ -32,19 +35,19 @@ class LogicResources:
 
         array_list.add(
             LogicDataTableResource(
-                "server/assets/csv_logic/missions.csv", LogicDataType.MISSION, 0
+                f"{path}/csv_logic/missions.csv", LogicDataType.MISSION, 0
             )
         )
 
         array_list.add(
             LogicDataTableResource(
-                "server/assets/csv_logic/globals.csv", LogicDataType.GLOBAL, 0
+                f"{path}/csv_logic/globals.csv", LogicDataType.GLOBAL, 0
             )
         )
 
         array_list.add(
             LogicDataTableResource(
-                "" "server/assets/csv_logic/texts.csv", cast(LogicDataType, 0), 3
+                f"{path}/csv_logic/texts.csv", cast(LogicDataType, 0), 3
             )
         )
 
