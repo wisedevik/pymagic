@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pymagic"
+version = "1.3.0"
+description = "Minimalistic server for Clash of Clans"
+authors = [
+    "user-with-username",
+    "wisedevik"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+calltracing = "1.0.1"
+toml = "0.10.2"
+decycle = "1.0.1"
+pyfiglet = "1.0.3"
+sqlalchemy = "2.0.43"
+asyncpg = "0.30.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

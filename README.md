@@ -31,13 +31,13 @@ PyMagic is a minimalistic, fully async Clash of Clans server written in Python f
 2. Install requirements:
 
     ```bash
-    pip install -r requirements.txt
+    poetry install
     ```
 
 3. Run the server:
 
     ```bash
-    python3 main.py
+    poetry run python3 main.py
     ```
 
 ## License

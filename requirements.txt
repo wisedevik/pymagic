@@ -1,6 +1,0 @@
-asyncpg
-calltracing==1.0.1
-toml
-decycle==1.0.1
-pyfiglet
-sqlalchemy
