@@ -10,7 +10,7 @@ class CSVColumn:
         self.int_values_list: LogicArrayList[int] = LogicArrayList[int]()
         self.boolean_value_list: LogicArrayList[int] = LogicArrayList[int]()
 
-        match (type):
+        match type:
             case 0:
                 self.string_values_list.ensure_capacity(size)
             case 1:

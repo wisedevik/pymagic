@@ -6,7 +6,6 @@ from titan.json.logic_json_object import LogicJSONObject
 
 
 class LogicGameMode:
-
     def __init__(self):
         self.state = 1
 
