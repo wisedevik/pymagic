@@ -12,7 +12,6 @@ from logic.data.data_objects.logic_global_data import LogicGlobalData
 from logic.data.data_objects.logic_globals import LogicGlobals
 from typing import cast
 
-
 TABLE_COUNT = 52
 
 
